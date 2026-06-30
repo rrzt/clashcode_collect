@@ -1,57 +1,25 @@
 proxies:
-- name: 俄罗斯联邦-001 |1.9MB/s
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  port: 22231
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 其他-001
+- name: 中国-001
   type: vless
   network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 172.64.52.152
-  servername: t1s1.rittbo.kdns.fr
-  port: 8443
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-  ech-opts:
-    _dns: https://dns.alidns.com/dns-query
-    enable: true
-    query-server-name: cloudflare-ech.com
-  packet-encoding: xudp
-- name: 其他-002
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 172.64.40.84
-  servername: t1s1.rittbo.kdns.fr
+  uuid: Telegram🇨🇳 @WangCai2
+  server: 47.93.235.180
+  servername: support.zoom.us.yxls.eu.cc
   port: 443
-  skip-cert-verify: false
   tls: true
   udp: true
+  xudp: true
   ws-opts:
     headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /sg-melbi
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
   client-fingerprint: chrome
   encryption: none
-  ech-opts:
-    _dns: https://dns.alidns.com/dns-query
-    enable: true
-    query-server-name: cloudflare-ech.com
-  packet-encoding: xudp
-- name: 其他-003
+- name: 其他-001
   type: vless
   network: ws
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -72,7 +40,163 @@ proxies:
     enable: true
     query-server-name: cloudflare-ech.com
   packet-encoding: xudp
+- name: 其他-002
+  type: vmess
+  network: ws
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  server: 104.19.46.17
+  port: 2086
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- name: 其他-003
+  type: vless
+  network: ws
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  server: wstg.datasynctrue.online
+  servername: wstg.datasynctrue.online
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: wstg.datasynctrue.online
+    path: /api/connect
 - name: 其他-004
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: de1-14.466688.xyz
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /?ed=8888&https:/t.me/daily_free_vpn
+  encryption: none
+- name: 其他-005
+  type: trojan
+  network: ws
+  server: iranpoems.ir
+  port: 443
+  password: Mitivpn
+  skip-cert-verify: false
+  udp: true
+  sni: www.gamingdll.ir
+  ws-opts:
+    headers:
+      Host: www.gamingdll.ir
+    path: /usa=mitivpn
+- name: 其他-006
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.52.152
+  servername: t1s1.rittbo.kdns.fr
+  port: 8443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-007
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 162.159.21.206
+  servername: t1s1.rittbo.kdns.fr
+  port: 2083
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-008
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.40.84
+  servername: t1s1.rittbo.kdns.fr
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-009
+  type: vless
+  network: ws
+  uuid: e8f4480b-fe3f-4c89-bfd9-90711716529f
+  server: snapp.ir
+  servername: ah3.mc.telewebion.top
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: ah3.mc.telewebion.top
+    path: /
+  client-fingerprint: chrome
+- name: 其他-010
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 104.18.45.249
+  servername: t1s1.rittbo.kdns.fr
+  port: 8443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-011
   type: vless
   network: ws
   uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
@@ -88,7 +212,336 @@ proxies:
       Host: sp.linuxdododo.ccwu.cc
     path: /proxyip=ProxyIP.JP.cmliussss.net
   client-fingerprint: chrome
-- name: 其他-005
+- name: 其他-012
+  type: vless
+  network: ws
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  server: 104.16.1.237
+  port: 443
+  tls: true
+  udp: false
+  sni: 2026062822.smjh.de5.net
+  ws-opts:
+    headers:
+      Host: 2026062822.smjh.de5.net
+    path: /?ed=2048
+  client-fingerprint: chrome
+- name: 其他-013
+  type: vless
+  network: ws
+  uuid: 192bc523-26fe-4233-b10d-725deb710ea5
+  server: support.zoom.us
+  servername: support.zoom.us.yxls.eu.cc
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /us-gllc
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-014
+  type: vless
+  network: ws
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  server: cnamefuckxxs.yuchen.icu
+  port: 443
+  tls: true
+  udp: false
+  sni: 2026062822.smjh.de5.net
+  ws-opts:
+    headers:
+      Host: 2026062822.smjh.de5.net
+    path: /?ed=2048
+  client-fingerprint: chrome
+- name: 其他-015
+  type: vless
+  network: ws
+  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+  server: skk.moe
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: tiny-lake-bbf1.369-766.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 其他-016
+  type: vless
+  network: ws
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  server: 104.20.2.221
+  servername: bycf.lzjnb.shop
+  port: 8443
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: bycf.lzjnb.shop
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  client-fingerprint: chrome
+- name: 其他-017
+  type: vless
+  network: ws
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: www.epicgames.com
+  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
+  port: 2095
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
+    path: /
+  client-fingerprint: randomized
+- name: 其他-018
+  type: vmess
+  network: ws
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  server: 104.18.7.138
+  port: 443
+  skip-cert-verify: true
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdnde.irteyz.today
+    path: /
+- name: 其他-019
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: de1-9.466688.xyz
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
+    path: /?ed=8888&https:/t.me/daily_free_vpn
+  encryption: none
+- name: 其他-020
+  type: vless
+  network: ws
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  server: news.microsoft.com
+  servername: amoosamiii.net
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: amoosamiii.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    path: /poiuyws
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-021
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: de1-40.466688.xyz
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /?ed=8888&https:/t.me/daily_free_vpn
+  encryption: none
+- name: 其他-022
+  type: trojan
+  network: ws
+  server: 104.17.131.88
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.gossipglove.com
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /assignment
+  client-fingerprint: chrome
+- name: 其他-023
+  type: vless
+  network: ws
+  uuid: a3585167-b919-4067-c770-972d53aedc5e
+  server: mpt.com.mm
+  servername: vip.sirsis2.my.id
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: vip.sirsis2.my.id
+    path: /
+- name: 其他-024
+  type: vless
+  network: xhttp
+  uuid: d8b54a64-3e9a-4455-93c4-452202fbe440
+  server: 104.18.153.130
+  servername: www.chinns.ccwu.cc
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    host: www.chinns.ccwu.cc
+    mode: stream-one
+    path: /a/v----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE
+  encryption: none
+- name: 其他-025
+  type: vless
+  network: ws
+  uuid: a0fe052d-6ca1-4a9c-b626-7ecf78f386cb
+  server: 108.162.194.165
+  port: 2086
+  skip-cert-verify: false
+  ws-opts:
+    headers:
+      Host: arshia.lezzatArshia.ir
+    path: /
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-026
+  type: vless
+  network: http
+  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
+  server: 172.65.111.43
+  port: 22
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  xudp: true
+  tfo: false
+  http-opts:
+    method: GET
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+  encryption: none
+- name: 其他-027 |1.2MB/s|YT-HK
+  type: vless
+  network: ws
+  uuid: da78f96e-01d3-4289-9d0b-fbbe3f0a5472
+  server: 172.64.155.209
+  servername: aio.zxcore.biz.id
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: aio.zxcore.biz.id
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
+    path: /aioproxybot/124.153.168.248-50001
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-028
+  type: vless
+  network: ws
+  uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
+  server: www.speedtest.net
+  port: 2086
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
+  encryption: none
+- name: 其他-029 |819KB/s
+  type: trojan
+  network: ws
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmloud.com
+  alpn:
+  - http/1.1
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
+    path: /assignment
+  client-fingerprint: chrome
+- name: 其他-030
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: yx.cloudflare.182682.xyz
+  servername: t1s1.rittbo.kdns.fr
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-031
+  type: vmess
+  network: tcp
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  server: v45.hdacd.com
+  port: 30845
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  xudp: true
+  alterId: 2
+  cipher: auto
+- name: 其他-032
+  type: vless
+  network: ws
+  uuid: 57d22829-187c-4f83-b757-d6e367ca6de8
+  server: blog.webex.com
+  servername: blog.webex.com.yxls.eu.cc
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: blog.webex.com.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /au-mt
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-033
   type: vless
   network: ws
   uuid: d829cf8d-0a32-4e60-bcc3-a03fb4658ea4
@@ -102,7 +555,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
         AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 其他-006
+- name: 其他-034
   type: vless
   network: http
   uuid: ecf3b76c-e920-43cb-b733-8b68d7f538dc
@@ -118,21 +571,7 @@ proxies:
     - /
   encryption: mlkem768x25519plus.native.0rtt.Ka3iO2v4SG2XJdKFMLfV8KT-GQsCsj389cm6VcPTRzc
   flow: xtls-rprx-vision
-- name: 其他-007
-  type: vless
-  network: xhttp
-  uuid: 1b15fe14-d01a-47f0-acba-98f79a13c2af
-  server: wst.imsoon.net
-  port: 80
-  udp: true
-  xudp: true
-  encryption: none
-  xhttp-opts:
-    host: play.google.com
-    mode: auto
-    path: /SoonTeam
-    x-padding-bytes: 100-1000
-- name: 其他-008
+- name: 其他-035
   type: vless
   network: ws
   uuid: be9bf82b-b48b-4b7e-9cba-3b86801058ba
@@ -150,7 +589,7 @@ proxies:
     path: /
   client-fingerprint: chrome
   encryption: none
-- name: 其他-009
+- name: 其他-036
   type: vless
   network: ws
   uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
@@ -164,22 +603,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/54.0.2840.99 Safari/537.36
     path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 其他-010
-  type: trojan
-  network: ws
-  server: 104.17.131.88
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.gossipglove.com
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/43.0.2357.65 Safari/537.36
-    path: /assignment
-  client-fingerprint: chrome
-- name: 其他-011 |1.6MB/s
+- name: 其他-037 |1.6MB/s
   type: http
   server: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
   port: 3443
@@ -187,167 +611,7 @@ proxies:
   tls: true
   sni: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
   username: 0b869f32-657e-11ee-a90c-f23c9313b177
-- name: 其他-012 |718KB/s
-  type: http
-  server: d55aaebc-t9zts0-th1s9h-8rja.sg.oshuawei.com
-  port: 443
-  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  tls: true
-  sni: d55aaebc-t9zts0-th1s9h-8rja.sg.oshuawei.com
-  username: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-- name: 其他-013
-  type: vless
-  network: ws
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
-  server: wstg.datasynctrue.online
-  servername: wstg.datasynctrue.online
-  port: 443
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: wstg.datasynctrue.online
-    path: /api/connect
-- name: 其他-014
-  type: vless
-  network: ws
-  uuid: e8f4480b-fe3f-4c89-bfd9-90711716529f
-  server: snapp.ir
-  servername: ah3.mc.telewebion.top
-  port: 443
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ah3.mc.telewebion.top
-    path: /
-  client-fingerprint: chrome
-- name: 其他-015
-  type: vless
-  network: ws
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  server: www.epicgames.com
-  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-  port: 2095
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-    path: /
-  client-fingerprint: randomized
-- name: 其他-016
-  type: vmess
-  network: ws
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  server: 104.18.7.138
-  port: 443
-  skip-cert-verify: true
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdnde.irteyz.today
-    path: /
-- name: 其他-017
-  type: vless
-  network: xhttp
-  uuid: 3c4ebe9f-8d9c-4275-b422-0a8a1d8b660f
-  server: reseau.proxy.rlwy.net
-  port: 55784
-  udp: true
-  xudp: true
-  encryption: none
-  xhttp-opts:
-    mode: auto
-    path: /api
-    x-padding-bytes: 100-1000
-- name: 其他-018
-  type: vless
-  network: ws
-  uuid: a3585167-b919-4067-c770-972d53aedc5e
-  server: mpt.com.mm
-  servername: vip.sirsis2.my.id
-  port: 443
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: vip.sirsis2.my.id
-    path: /
-- name: 其他-019
-  type: vmess
-  network: ws
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  server: 104.19.46.17
-  port: 2086
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 其他-020
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: de1-14.466688.xyz
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /?ed=8888&https:/t.me/daily_free_vpn
-  encryption: none
-- name: 其他-021
-  type: vless
-  network: ws
-  uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
-  server: www.speedtest.net
-  servername: octopusss.net
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: octopusss.net
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /odiyfws
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-022
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: youxuan.cf.090227.xyz
-  servername: t1s1.rittbo.kdns.fr
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-023
+- name: 其他-038
   type: vless
   network: xhttp
   uuid: db978b3a-e06e-4a73-831b-497fa7839b60
@@ -364,72 +628,7 @@ proxies:
     path: /@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-
     x-padding-bytes: 100-1000
   encryption: none
-- name: 其他-024
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: de1-9.466688.xyz
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/31.0.1650.57 Safari/537.36
-    path: /?ed=8888&https:/t.me/daily_free_vpn
-  encryption: none
-- name: 其他-025
-  type: vless
-  network: ws
-  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
-  server: sv2.azparadox.ir
-  servername: azsv2.ir5ive.ir
-  port: 8880
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  xudp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: azsv2.ir5ive.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
-    path: /
-  encryption: none
-- name: 其他-026
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: de1-40.466688.xyz
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /?ed=8888&https:/t.me/daily_free_vpn
-  encryption: none
-- name: 其他-027
-  type: vless
-  network: http
-  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
-  server: 172.65.111.43
-  port: 22
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  xudp: true
-  tfo: false
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  encryption: none
-- name: 其他-028 |2.4MB/s|YT-KR|GPT⁺-KR|GM-KR
+- name: 其他-039 |2.4MB/s|YT-KR|GPT⁺-KR|GM-KR
   type: http
   server: testkr3.ssv.vc
   port: 30446
@@ -439,7 +638,7 @@ proxies:
   udp: true
   sni: testkr3.ssv.vc
   username: test
-- name: 其他-029 |4.8MB/s
+- name: 其他-040 |4.8MB/s
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -454,22 +653,7 @@ proxies:
         like Gecko) Chrome/66.0.3359.117 Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
-- name: 其他-030 |4.2MB/s
-  type: vless
-  network: ws
-  uuid: df301b32-1152-4526-9a63-beedd93d3156
-  server: vl.dalazhi.cloudns.biz
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: vl.dalazhi.cloudns.biz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: '%2F%3Fed%3D2048'
-  encryption: none
-- name: 其他-031 |3.2MB/s|TK-US|YT-US|GPT⁺-SG|GM-US
+- name: 其他-041 |3.2MB/s|TK-US|YT-US|GPT⁺-SG|GM-US
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -484,7 +668,7 @@ proxies:
         Gecko) Chrome/45.0.2454.85 Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
-- name: 其他-032 |3.0MB/s|YT-HK|GPT⁺-SG
+- name: 其他-042 |3.0MB/s|YT-HK|GPT⁺-SG
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -499,7 +683,7 @@ proxies:
         like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
-- name: 其他-033 |2.4MB/s
+- name: 其他-043 |2.4MB/s
   type: trojan
   network: ws
   server: 172.66.44.230
@@ -512,7 +696,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 其他-034 |1.3MB/s|GM
+- name: 其他-044 |1.3MB/s|GM
   type: trojan
   network: ws
   server: koma-yt.pages.dev
@@ -529,7 +713,7 @@ proxies:
         like Gecko) Chrome/65.0.3325.181 Safari/537.36
     path: /tro8sFW1S91B6sZrM1?ed=2560
   client-fingerprint: chrome
-- name: 其他-035 |953KB/s
+- name: 其他-045 |953KB/s
   type: vless
   network: tcp
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
@@ -543,7 +727,7 @@ proxies:
   client-fingerprint: edge
   flow: xtls-rprx-vision
   encryption: none
-- name: 其他-036 |850KB/s
+- name: 其他-046 |850KB/s
   type: http
   server: twmoon1-cdn-route.couldflare-cdn.com
   port: 1443
@@ -568,20 +752,6 @@ proxies:
       Host: oplg1.cfcdn2.xyz
     path: /AUIKN8AU
 - name: 加拿大-002
-  type: vmess
-  network: ws
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  server: 23.227.38.23
-  port: 443
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: 加拿大-003
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -596,7 +766,7 @@ proxies:
         Gecko) Chrome/56.0.2924.87 Safari/537.36
     path: /?https:/t.me/WangCai2🇨🇳
   encryption: none
-- name: 加拿大-004
+- name: 加拿大-003
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -609,7 +779,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 加拿大-005
+- name: 加拿大-004
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -622,7 +792,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 加拿大-006
+- name: 加拿大-005
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -635,7 +805,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 加拿大-007
+- name: 加拿大-006
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -648,6 +818,20 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
+- name: 加拿大-007
+  type: vmess
+  network: ws
+  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  server: 23.227.38.23
+  port: 443
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: oplg1.cfcdn2.xyz
+    path: /AUIKN8AU
 - name: 加拿大-008
   type: vless
   network: ws
@@ -697,6 +881,20 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
 - name: 塞舌尔-001
+  type: vmess
+  network: ws
+  uuid: 712772c2-f7d7-4d33-bf02-b7a7e5f729c4
+  server: 154.83.2.90
+  port: 2087
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: snaPPfood1.eSMaIlkorEa.sHoP
+    path: /
+- name: 塞舌尔-002
   type: vless
   network: xhttp
   uuid: ac006062-f051-43c6-bd4c-f409285c8635
@@ -712,21 +910,36 @@ proxies:
     mode: auto
     path: /v2raylink
   encryption: none
-- name: 塞舌尔-002
-  type: vmess
+- name: 德国-001
+  type: vless
   network: ws
-  uuid: 712772c2-f7d7-4d33-bf02-b7a7e5f729c4
-  server: 154.83.2.90
-  port: 2087
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.7.151
+  port: 80
   skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
+  tls: false
+  udp: true
   ws-opts:
     headers:
-      Host: snaPPfood1.eSMaIlkorEa.sHoP
-    path: /
-- name: 德国-001
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 德国-002
+  type: vmess
+  network: tcp
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 82.198.246.97
+  servername: vc.fly.dev
+  port: 180
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  xudp: true
+  alterId: 0
+  cipher: auto
+  ws-path: /
+  ws-headers:
+    Host: 82.198.246.97
+- name: 德国-003
   type: vless
   network: xhttp
   uuid: e1c60b5f-f324-4e86-ab35-6fd50b92931e
@@ -745,7 +958,7 @@ proxies:
     path: /@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-
     x-padding-bytes: 100-1000
   encryption: none
-- name: 德国-002 |1.6MB/s
+- name: 德国-004 |1.6MB/s
   type: hysteria
   server: 5.83.129.90
   port: 54177
@@ -759,7 +972,7 @@ proxies:
   protocol: udp
   up: 500
   auth_str: dongtaiwang.com
-- name: 德国-003 |594KB/s
+- name: 德国-005 |594KB/s
   type: hysteria
   server: 5.83.129.153
   port: 20088
@@ -773,35 +986,6 @@ proxies:
   protocol: udp
   up: 500
   auth_str: dongtaiwang.com
-- name: 德国-004
-  type: vmess
-  network: tcp
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  server: 82.198.246.97
-  servername: vc.fly.dev
-  port: 180
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  xudp: true
-  alterId: 0
-  cipher: auto
-  ws-path: /
-  ws-headers:
-    Host: 82.198.246.97
-- name: 德国-005
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.7.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
 - name: 德国-006
   type: vmess
   network: tcp
@@ -888,13 +1072,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 日本-001 |2.9MB/s|TK-JP|YT-JP|GPT⁺-JP|GM-JP
-  type: http
-  server: 13.114.169.120
-  port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 日本-002
+- name: 日本-001
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -909,30 +1087,13 @@ proxies:
         Gecko) Chrome/50.0.2661.102 Safari/537.36
     path: /?ed=2560&https:/t.me/WangCai2🇨🇳
   encryption: none
-- name: 比利时-001
-  type: vless
-  network: grpc
-  uuid: 68de0a0f-25bc-4fd4-ba78-183a1b80495e
-  server: 188.95.12.110
-  port: 8080
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-- name: 比利时-002
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.9.151
-  port: 80
+- name: 日本-002 |2.9MB/s|TK-JP|YT-JP|GPT⁺-JP|GM-JP
+  type: http
+  server: 13.114.169.120
+  port: 443
   skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 比利时-003
+  tls: true
+- name: 比利时-001
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -945,11 +1106,34 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 比利时-004
+- name: 比利时-002
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   server: 151.101.8.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 比利时-003
+  type: vless
+  network: grpc
+  uuid: 68de0a0f-25bc-4fd4-ba78-183a1b80495e
+  server: 188.95.12.110
+  port: 8080
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 比利时-004
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.9.151
   port: 80
   skip-cert-verify: true
   tls: false
@@ -979,22 +1163,16 @@ proxies:
   port: 443
   skip-cert-verify: true
   tls: true
-- name: 瑞士-001
-  type: trojan
+- name: 爱沙尼亚-001 |2.7MB/s|TK-US|YT-US|GM-US
+  type: vless
   network: ws
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  udp: true
-  sni: www.calmlunch.com
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.80.110.50
+  port: 8880
   ws-opts:
     headers:
-      Host: www.calmlunch.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.111 Safari/537.36
-    path: /assignment
-  client-fingerprint: chrome
+      Host: vms.lifetime51.workers.dev
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
 - name: 立陶宛-001
   type: vless
   network: xhttp
@@ -1034,9 +1212,9 @@ proxies:
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-004 |3.4MB/s|TK-RO|YT-CN|GPT⁺-RO
+- name: 罗马尼亚-004 |3.4MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
   type: http
-  server: 84.239.49.199
+  server: 84.239.49.215
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1049,9 +1227,9 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-006 |3.4MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
+- name: 罗马尼亚-006 |3.4MB/s|TK-RO|YT-CN|GPT⁺-RO
   type: http
-  server: 84.239.49.215
+  server: 84.239.49.199
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1152,57 +1330,28 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-020 |1.2MB/s
-  type: http
-  server: 84.239.14.159
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-021 |1.2MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-020 |1.2MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 84.239.14.149
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-022 |1.2MB/s
+- name: 罗马尼亚-021 |1.2MB/s
   type: http
   server: 193.176.84.32
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
+- name: 罗马尼亚-022 |1.2MB/s
+  type: http
+  server: 84.239.14.159
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
 - name: 罗马尼亚-023 |1.1MB/s
-  type: http
-  server: 84.239.49.166
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-024 |1.1MB/s
-  type: http
-  server: 84.239.49.59
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-025 |1.1MB/s
-  type: http
-  server: 84.239.49.254
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-026 |1.1MB/s
-  type: http
-  server: 84.239.49.191
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-027 |1.1MB/s
   type: http
   server: 84.239.49.231
   port: 9002
@@ -1210,125 +1359,50 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-028 |1.1MB/s
+- name: 罗马尼亚-024 |1.1MB/s
+  type: http
+  server: 84.239.49.191
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-025 |1.1MB/s
   type: http
   server: 193.176.84.40
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-029 |1.1MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-026 |1.1MB/s
+  type: http
+  server: 84.239.49.59
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-027 |1.1MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 193.176.84.30
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
+- name: 罗马尼亚-028 |1.1MB/s
+  type: http
+  server: 84.239.49.254
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-029 |1.1MB/s
+  type: http
+  server: 84.239.49.166
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
 - name: 罗马尼亚-030 |1.0MB/s
-  type: http
-  server: 84.239.49.171
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-031 |1.0MB/s
-  type: http
-  server: 84.239.14.158
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-032 |1.0MB/s
-  type: http
-  server: 84.239.49.49
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-033 |1.0MB/s
-  type: http
-  server: 84.239.49.200
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-034 |1.0MB/s
-  type: http
-  server: 84.239.49.159
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-035 |1.0MB/s
-  type: http
-  server: 84.239.49.185
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-036 |1.0MB/s
-  type: http
-  server: 84.239.49.249
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-037 |1.0MB/s
-  type: http
-  server: 84.239.49.40
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-038 |1.0MB/s
-  type: http
-  server: 84.239.14.146
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-039 |1.0MB/s
-  type: http
-  server: 84.239.49.240
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-040 |1.0MB/s
-  type: http
-  server: 84.239.49.198
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-041 |1.0MB/s
-  type: http
-  server: 84.239.49.42
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-042 |1.0MB/s
-  type: http
-  server: 84.239.49.239
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-043 |1.0MB/s
-  type: http
-  server: 84.239.49.38
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-044 |1.0MB/s
   type: http
   server: 84.239.49.164
   port: 9002
@@ -1336,9 +1410,113 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
+- name: 罗马尼亚-031 |1.0MB/s
+  type: http
+  server: 84.239.49.42
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-032 |1.0MB/s
+  type: http
+  server: 84.239.49.40
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-033 |1.0MB/s
+  type: http
+  server: 84.239.49.198
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-034 |1.0MB/s
+  type: http
+  server: 84.239.14.158
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-035 |1.0MB/s
+  type: http
+  server: 84.239.49.38
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-036 |1.0MB/s
+  type: http
+  server: 84.239.49.200
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-037 |1.0MB/s
+  type: http
+  server: 84.239.49.239
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-038 |1.0MB/s
+  type: http
+  server: 84.239.49.49
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-039 |1.0MB/s
+  type: http
+  server: 84.239.49.159
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-040 |1.0MB/s
+  type: http
+  server: 84.239.49.240
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-041 |1.0MB/s
+  type: http
+  server: 193.176.84.26
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-042 |1.0MB/s
+  type: http
+  server: 84.239.49.249
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-043 |1.0MB/s
+  type: http
+  server: 84.239.49.185
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-044 |1.0MB/s
+  type: http
+  server: 84.239.14.146
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
 - name: 罗马尼亚-045 |1.0MB/s
   type: http
-  server: 84.239.49.192
+  server: 84.239.49.171
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1352,7 +1530,7 @@ proxies:
   sni: www.bing.com
 - name: 罗马尼亚-047 |1.0MB/s
   type: http
-  server: 193.176.84.26
+  server: 84.239.49.192
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1613,14 +1791,14 @@ proxies:
   sni: www.bing.com
 - name: 罗马尼亚-083 |717KB/s
   type: http
-  server: 84.239.49.197
+  server: 84.239.49.176
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
 - name: 罗马尼亚-084 |717KB/s
   type: http
-  server: 84.239.49.176
+  server: 84.239.49.197
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1806,22 +1984,22 @@ proxies:
   sni: www.bing.com
 - name: 罗马尼亚-109 |538KB/s
   type: http
-  server: 84.239.49.229
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-110 |538KB/s
-  type: http
-  server: 84.239.49.202
+  server: 84.239.49.55
   port: 9002
   skip-cert-verify: true
   tls: true
   udp: true
   sni: www.bing.com
+- name: 罗马尼亚-110 |538KB/s
+  type: http
+  server: 84.239.49.229
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
 - name: 罗马尼亚-111 |538KB/s
   type: http
-  server: 84.239.49.55
+  server: 84.239.49.202
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1858,93 +2036,53 @@ proxies:
   sni: www.bing.com
 - name: 美国-001
   type: vless
-  network: xhttp
-  uuid: 1b15fe14-d01a-47f0-acba-98f79a13c2af
-  server: 76.13.121.90
-  port: 80
-  udp: true
-  xudp: true
-  encryption: none
-  xhttp-opts:
-    host: play.google.com
-    mode: auto
-    path: /SoonTeam
-    x-padding-bytes: 100-1000
-- name: 美国-002
-  type: vless
   network: ws
-  uuid: d27a232b-de94-4204-9bae-b0c243c6b93c
-  server: 167.82.101.251
-  servername: default.ssl.fastly.net
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 63.141.128.30
+  port: 8880
   ws-opts:
     headers:
-      Host: newip.global.ssl.fastly.neT.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
+      Host: vms.lifetime42.workers.dev
     path: /
-  client-fingerprint: chrome
-  encryption: none
-- name: 美国-003 |3.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 138.199.35.215
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-004 |3.1MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 45.145.73.241
-  port: 8443
-  skip-cert-verify: true
-  tls: true
-- name: 美国-005 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.47
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-006 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.12
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-007 |2.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.20
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-008 |1.5MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 209.148.53.153
-  port: 8090
-  skip-cert-verify: true
-  tls: true
-- name: 美国-009 |1.3MB/s
-  type: mieru
-  server: 157.254.223.44
-  port: 34567
-  password: dongtaiwang.com
-  multiplexing: MULTIPLEXING_LOW
-  transport: TCP
-  username: dongtaiwang.com
-- name: 美国-010 |1.2MB/s|TK-US|GPT⁺-US|GM-US
-  type: http
-  server: 198.2.210.70
+- name: 美国-002
+  type: trojan
+  network: ws
+  server: 151.101.56.6
   port: 443
+  password: Mitivpn
   skip-cert-verify: true
   tls: true
-- name: 美国-011 |1.0MB/s|TK-US|GPT⁺-US
-  type: http
-  server: 138.199.35.198
-  port: 9002
+  udp: true
+  sni: ssl.fastly.com
+  ws-opts:
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+    path: /de=mitivpn
+- name: 美国-003
+  type: vless
+  network: ws
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 192.0.54.30
+  port: 8880
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /
+- name: 美国-004
+  type: trojan
+  network: ws
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
   skip-cert-verify: true
   tls: true
-- name: 美国-012
+  udp: true
+  sni: ssl.fastly.com
+  ws-opts:
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+    path: /de=mitivpn
+- name: 美国-005
   type: vmess
   network: grpc
   uuid: 8c65cbad-923d-4f73-c653-83c75ca4e1aa
@@ -1957,7 +2095,22 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-- name: 美国-013
+- name: 美国-006
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.97.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-007
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -1970,25 +2123,22 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-014
+- name: 美国-008
   type: vless
   network: ws
-  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
-  server: 141.193.213.21
-  servername: amoosamiii.net
-  port: 443
-  tls: true
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.100.151
+  port: 80
   udp: true
   xudp: true
   ws-opts:
     headers:
-      Host: amoosamiii.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/36.0.1985.143 Safari/537.36
-    path: /poiuyws
-  client-fingerprint: chrome
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
   encryption: none
-- name: 美国-015
+- name: 美国-009
   type: vmess
   network: ws
   uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
@@ -2002,7 +2152,22 @@ proxies:
     headers:
       Host: v2ray2.ssr-free2.xyz
     path: /dongtaiwang.com
-- name: 美国-016
+- name: 美国-010
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.2.151
+  port: 80
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+  encryption: none
+  packet-encoding: xudp
+- name: 美国-011
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2017,7 +2182,7 @@ proxies:
         like Gecko) Chrome/66.0.3359.181 Safari/537.36
     path: /?ed=2560
   encryption: none
-- name: 美国-017
+- name: 美国-012
   type: vmess
   network: grpc
   uuid: 08ec6a06-8c15-4069-a781-8c725a30b7e7
@@ -2030,6 +2195,81 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
+- name: 美国-013
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.33.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-014
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.153.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-015
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.0.60
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-016
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.51.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-017
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.155.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
 - name: 美国-018
   type: vmess
   network: ws
@@ -2045,6 +2285,62 @@ proxies:
       Host: clash6.ssr-free.xyz
     path: /dongtaiwang.com
 - name: 美国-019
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.170.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-020
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.57.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /?ed=2560
+  encryption: none
+- name: 美国-021
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.255.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/39.0.2171.95 Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-022
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.3.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-023
   type: vmess
   network: ws
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -2059,7 +2355,128 @@ proxies:
     headers:
       Host: kellie.makeup
     path: /linkvws
-- name: 美国-020
+- name: 美国-024
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.58.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-025
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.74.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-026
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.64.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-027
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.17.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-028
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.48.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-029
+  type: vmess
+  network: ws
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  server: 69.84.182.49
+  port: 80
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+    path: /
+- name: 美国-030
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.22.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-031
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.160.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-032
+  type: trojan
+  network: ws
+  server: 151.101.193.242
+  port: 443
+  password: Mitivpn
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: cdn.gamingdll.ir
+  ws-opts:
+    headers:
+      Host: cdn.gamingdll.ir
+    path: /de=mitivpn
+- name: 美国-033
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2075,7 +2492,22 @@ proxies:
     max-early-data: 2560
   encryption: none
   packet-encoding: xudp
-- name: 美国-021
+- name: 美国-034
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.196.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-035
   type: vless
   network: ws
   uuid: 0cc72cd6-29b2-4dcc-af4d-2907d19a0680
@@ -2093,334 +2525,7 @@ proxies:
     path: /
   client-fingerprint: chrome
   encryption: none
-- name: 美国-022
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.55.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-023 |3.2MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 38.28.193.188
-  port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 美国-024
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.97.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-025
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.100.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.87 Safari/537.36
-    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-026
-  type: vless
-  network: ws
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  server: 192.0.54.30
-  port: 8880
-  ws-opts:
-    headers:
-      Host: vms.lifetime35.workers.dev
-    path: /
-- name: 美国-027
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.2.151
-  port: 80
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-  encryption: none
-  packet-encoding: xudp
-- name: 美国-028
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.33.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.87 Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-029
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.153.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-030
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.0.60
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-031
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.51.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-032
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.155.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Slackware/Chrome/12.0.742.100 Safari/534.30
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-033
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.170.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-034
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.57.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /?ed=2560
-  encryption: none
-- name: 美国-035
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.255.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
 - name: 美国-036
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.3.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-037
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.58.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-038
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.74.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-039
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.64.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-040
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.17.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-041
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.48.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-042
-  type: vmess
-  network: ws
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-  server: 69.84.182.49
-  port: 80
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-    path: /
-- name: 美国-043
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.22.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-044
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.160.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-045
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.196.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-046
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2433,7 +2538,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-047
+- name: 美国-037
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2446,7 +2551,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-048
+- name: 美国-038
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2461,7 +2566,349 @@ proxies:
         like Gecko) Chrome/62.0.3202.89 Safari/537.36
     path: /
   encryption: none
+- name: 美国-039
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.118.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /?ed=2560
+  encryption: none
+- name: 美国-040
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.0.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-041
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.108.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-042
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.55.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-043
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.171.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /?ed=2560
+  encryption: none
+- name: 美国-044
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.130.219
+  servername: max-gb1.global.ssl.fastly.net
+  port: 80
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-045
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.73.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-046
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.114.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-047
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.109.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?https:/t.me/WangCai2🇨🇳
+  encryption: none
+- name: 美国-048
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.101.151
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
+  encryption: none
 - name: 美国-049
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.109.223
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-050
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.194.151
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
+- name: 美国-051 |3.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 138.199.35.215
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-052 |3.2MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 38.28.193.188
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-053
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.194.219
+  servername: max-gb1.global.ssl.fastly.net
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-054 |2.9MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 45.145.73.240
+  port: 8443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-055
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 167.82.0.1
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-056 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.12
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-057 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.47
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-058 |2.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.20
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-059 |1.5MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 209.148.53.153
+  port: 8090
+  skip-cert-verify: true
+  tls: true
+- name: 美国-060
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.0.1
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-061 |1.3MB/s
+  type: mieru
+  server: 157.254.223.44
+  port: 34567
+  password: dongtaiwang.com
+  multiplexing: MULTIPLEXING_LOW
+  transport: TCP
+  username: dongtaiwang.com
+- name: 美国-062 |1.2MB/s|TK-US|GPT⁺-US|GM-US
+  type: http
+  server: 198.2.210.70
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-063
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 199.232.197.131
+  servername: max-gb1.global.ssl.fastly.net
+  port: 80
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: 美国-064 |1.0MB/s|TK-US|GPT⁺-US
+  type: http
+  server: 138.199.35.198
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-065
+  type: trojan
+  network: ws
+  server: 141.193.213.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmloud.com
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /assignment
+  client-fingerprint: chrome
+- name: 美国-066
+  type: vless
+  network: xhttp
+  uuid: 1b15fe14-d01a-47f0-acba-98f79a13c2af
+  server: 76.13.121.90
+  port: 80
+  udp: true
+  xudp: true
+  encryption: none
+  xhttp-opts:
+    host: play.google.com
+    mode: auto
+    path: /SoonTeam
+    x-padding-bytes: 100-1000
+- name: 美国-067
+  type: vless
+  network: ws
+  uuid: d27a232b-de94-4204-9bae-b0c243c6b93c
+  server: 167.82.101.251
+  servername: default.ssl.fastly.net
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: newip.global.ssl.fastly.neT.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.101 Safari/537.36
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+- name: 美国-068 |3.1MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 45.145.73.241
+  port: 8443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-069
   type: vless
   network: ws
   uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
@@ -2479,227 +2926,7 @@ proxies:
     path: /odiyfws
   client-fingerprint: chrome
   encryption: none
-- name: 美国-050
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.118.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /?ed=2560
-  encryption: none
-- name: 美国-051
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.0.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-052
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.108.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-053
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.171.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /?ed=2560
-  encryption: none
-- name: 美国-054
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.130.219
-  servername: max-gb1.global.ssl.fastly.net
-  port: 80
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-055
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.73.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-056
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.114.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-057
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.109.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /?https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-058
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.101.151
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /?ed=2560&https:/t.me/WangCai2🇨🇳
-  encryption: none
-- name: 美国-059
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.109.223
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-060
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.194.219
-  servername: max-gb1.global.ssl.fastly.net
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-061
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 167.82.0.1
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-062
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.0.1
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-063
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 199.232.197.131
-  servername: max-gb1.global.ssl.fastly.net
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国-064 |2.9MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 45.145.73.240
-  port: 8443
-  skip-cert-verify: true
-  tls: true
-- name: 美国-065
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.194.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
-- name: 美国-066 |4.3MB/s
+- name: 美国-070 |4.3MB/s
   type: hysteria
   server: 208.87.243.151
   port: 38845
@@ -2715,17 +2942,6 @@ proxies:
   protocol: udp
 - name: 芬兰-001
   type: vless
-  network: grpc
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  server: 95.216.171.50
-  port: 8880
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-- name: 芬兰-002
-  type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   server: 151.101.245.151
@@ -2737,6 +2953,17 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
+- name: 芬兰-002
+  type: vless
+  network: grpc
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  server: 95.216.171.50
+  port: 8880
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
 - name: 芬兰-003
   type: vless
   network: ws
@@ -2751,6 +2978,21 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
 - name: 英国-001
+  type: vless
+  network: ws
+  uuid: af475b0e-0c07-40fe-b4db-3dea2c0a481d
+  server: 91.193.58.17
+  servername: edgetunnel-cmliu.lyqnihao.dpdns.org
+  port: 2083
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: edgetunnel-cmliu.lyqnihao.dpdns.org
+    path: /fp=chrome
+- name: 英国-002
   type: vmess
   network: ws
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -2764,7 +3006,7 @@ proxies:
     headers:
       Host: jader.fun
     path: /linkvws
-- name: 英国-002
+- name: 英国-003
   type: vless
   network: ws
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -2773,7 +3015,7 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime09.workers.dev
-- name: 英国-003
+- name: 英国-004
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2788,7 +3030,7 @@ proxies:
         like Gecko) Chrome/67.0.3396.99 Safari/537.36
     path: /?https:/t.me/WangCai2🇨🇳
   encryption: none
-- name: 英国-004
+- name: 英国-005
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2801,7 +3043,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 英国-005
+- name: 英国-006
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2814,7 +3056,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 英国-006
+- name: 英国-007
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2827,43 +3069,19 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 荷兰-001 |2.1MB/s|TK-NL|GPT⁺-NL|GM-NL
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-002 |1.8MB/s|TK-NL|GPT⁺-NL|GM-NL
-  type: http
-  server: 5.255.118.82
+- name: 荷兰-001
+  type: trojan
+  network: ws
+  server: 188.164.248.122
   port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-003 |1.8MB/s|TK-NL|GPT⁺-NL
-  type: http
-  server: 51.159.225.196
-  port: 23856
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-004 |1.6MB/s|TK-NL|GPT⁺-NL|GM-NL
-  type: http
-  server: 84.17.47.147
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-005 |1.3MB/s|TK-NL|GPT⁺-NL
-  type: http
-  server: 2.59.183.62
-  port: 8443
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-006 |1.1MB/s|TK-NL|YT-RU|GPT⁺-NL
-  type: http
-  server: 146.103.33.227
-  port: 8443
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-007
+  password: 6c862415-30d2-4813-8e49-42e99a0bd415
+  skip-cert-verify: false
+  sni: space.byu.id.yxls.eu.cc
+  ws-opts:
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+    path: /us-gllc
+- name: 荷兰-002
   type: vless
   network: ws
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -2878,6 +3096,42 @@ proxies:
         Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /?ed=2560
   encryption: none
+- name: 荷兰-003 |2.1MB/s|TK-NL|GPT⁺-NL|GM-NL
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-004 |1.8MB/s|TK-NL|GPT⁺-NL|GM-NL
+  type: http
+  server: 5.255.118.82
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-005 |1.8MB/s|TK-NL|GPT⁺-NL
+  type: http
+  server: 51.159.225.196
+  port: 23856
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-006 |1.6MB/s|TK-NL|GPT⁺-NL|GM-NL
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-007 |1.3MB/s|TK-NL|GPT⁺-NL
+  type: http
+  server: 2.59.183.62
+  port: 8443
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-008 |1.1MB/s|TK-NL|YT-RU|GPT⁺-NL
+  type: http
+  server: 146.103.33.227
+  port: 8443
+  skip-cert-verify: true
+  tls: true
 - name: 西班牙-001
   type: vless
   network: ws
@@ -2891,13 +3145,7 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- name: 韩国-001 |1.7MB/s|YT-KR|GPT⁺-KR|GM-KR
-  type: http
-  server: 64.110.88.200
-  port: 30000
-  skip-cert-verify: true
-  tls: true
-- name: 韩国-002 |3.9MB/s
+- name: 韩国-001 |3.9MB/s
   type: socks5
   server: 121.169.46.116
   port: 1090
@@ -2906,7 +3154,48 @@ proxies:
   udp: true
   client-fingerprint: chrome
   username: T2clM0QlM0Q6
+- name: 韩国-002 |1.7MB/s|YT-KR|GPT⁺-KR|GM-KR
+  type: http
+  server: 64.110.88.200
+  port: 30000
+  skip-cert-verify: true
+  tls: true
+- name: 韩国-003
+  type: trojan
+  network: ws
+  server: 211.49.57.178
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
 - name: 香港-001
+  type: trojan
+  server: 103.177.136.42
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
+- name: 香港-002
+  type: trojan
+  server: 103.177.136.42
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+- name: 香港-003
+  type: vmess
+  network: http
+  uuid: 1d1ad417-29ed-41e8-aaed-323f797efe6b
+  server: 8.210.15.231
+  port: 41083
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 香港-004
   type: trojan
   network: tcp
   server: 103.177.136.45
@@ -2915,62 +3204,45 @@ proxies:
   skip-cert-verify: true
   udp: true
   sni: de.01.naiun.bilibili.com
-- name: 香港-002
-  type: trojan
-  server: 103.177.136.42
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-- name: 香港-003
-  type: trojan
-  server: 103.177.136.42
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-- name: 香港-004
-  type: trojan
-  server: 103.177.136.42
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
 - name: 香港-005
   type: trojan
   server: 103.177.136.45
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-- name: 香港-006
-  type: trojan
-  server: 103.177.136.42
   port: 41943
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
+- name: 香港-006
+  type: vmess
+  network: http
+  uuid: 7c3008e5-9665-4319-a2b9-ac7370665f1a
+  server: 47.242.69.124
+  port: 54620
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
 - name: 香港-007
+  type: trojan
+  server: 103.177.136.45
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+- name: 香港-008
   type: trojan
   server: 103.177.136.42
   port: 45553
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
-- name: 香港-008
-  type: trojan
-  server: 103.177.136.45
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
 - name: 香港-009
-  type: trojan
-  server: 103.177.136.42
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  type: vmess
+  network: http
+  uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd
+  server: 8.210.131.2
+  port: 31357
   skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
+  alterId: 0
+  cipher: auto
 - name: 香港-010
   type: trojan
   server: 103.177.136.45
@@ -2981,10 +3253,10 @@ proxies:
 - name: 香港-011
   type: trojan
   server: 103.177.136.45
-  port: 41943
+  port: 47909
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
+  sni: is.01.naiun.bilibili.com
 - name: 香港-012
   type: trojan
   server: 103.177.136.45
@@ -2993,32 +3265,32 @@ proxies:
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
 - name: 香港-013
-  type: vmess
-  network: http
-  uuid: 1d1ad417-29ed-41e8-aaed-323f797efe6b
-  server: 8.210.15.231
-  port: 41083
+  type: trojan
+  server: 103.177.136.42
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
   skip-cert-verify: true
-  alterId: 0
-  cipher: auto
+  sni: az.01.naiun.bilibili.com
 - name: 香港-014
-  type: vmess
-  network: http
-  uuid: 7c3008e5-9665-4319-a2b9-ac7370665f1a
-  server: 47.242.69.124
-  port: 54620
+  type: vless
+  network: ws
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  server: 151.101.78.151
+  port: 80
   skip-cert-verify: true
-  alterId: 0
-  cipher: auto
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?https:/t.me/WangCai2🇨🇳
 - name: 香港-015
-  type: vmess
-  network: http
-  uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd
-  server: 8.210.131.2
-  port: 31357
+  type: trojan
+  server: 103.177.136.42
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
   skip-cert-verify: true
-  alterId: 0
-  cipher: auto
+  sni: fr.01.naiun.bilibili.com
 - name: 香港-016
   type: vmess
   network: http
@@ -3047,6 +3319,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 香港-019
+  type: trojan
+  server: 103.177.136.42
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+- name: 香港-020
   type: vmess
   network: http
   uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6
@@ -3055,19 +3334,6 @@ proxies:
   skip-cert-verify: true
   alterId: 0
   cipher: auto
-- name: 香港-020
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 151.101.78.151
-  port: 80
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?https:/t.me/WangCai2🇨🇳
 - name: 香港-021 |819KB/s
   type: http
   server: 154.26.192.123
