@@ -1,7 +1,3 @@
 服务器：https://cmoontv.dedyn.io
 用户名：5009537727
 密码：5009537727
-
-服务器：https://tv.bestfun.eu.org
-用户名：vpsing.de
-密码：vpsing.de
