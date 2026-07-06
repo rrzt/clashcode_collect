@@ -1,17 +1,22 @@
 proxies:
-- name: 伊朗-001
+- name: 中国-001
   type: vless
   network: ws
-  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
-  server: 193.176.240.129
-  port: 8880
-  skip-cert-verify: true
-  tls: false
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  server: 39.107.252.182
+  servername: nbhhh.mrcool.kdns.fr
+  port: 443
+  tls: true
   udp: true
+  xudp: true
   ws-opts:
     headers:
-      Host: azsv2.ir5ive.ir
-    path: /
+      Host: nbhhh.mrcool.kdns.fr
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
+        Safari/537.36
+    path: /proxyip=Telegram-WangCai2🇨🇳fp=chromefp=chrome
+  client-fingerprint: chrome
 - name: 俄罗斯联邦-001
   type: vless
   network: ws
@@ -46,6 +51,22 @@ proxies:
 - name: 其他-001
   type: vless
   network: ws
+  uuid: 5b9fa73b-b549-480b-add9-c45e650d236f
+  server: cf.877774.xyz
+  servername: gddy.hhlfy.de5.net
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: gddy.hhlfy.de5.net
+    path: /
+  client-fingerprint: chrome
+- name: 其他-002
+  type: vless
+  network: ws
   uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
   server: 162.159.46.0
   port: 8880
@@ -57,690 +78,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
     path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 其他-002
-  type: vless
-  network: ws
-  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
-  server: 172.64.155.209
-  servername: cf.cfvip.lol
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: cf.cfvip.lol
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /pyip=47.251.95.178
-  client-fingerprint: chrome
 - name: 其他-003
-  type: vless
-  network: ws
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  server: openai.com
-  port: 2095
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-q.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /
-  encryption: none
-- name: 其他-004
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 198.41.223.238
-  servername: t1s1.rittbo.kdns.fr
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /?TELEGRAM-vpnserverrr_vpnserverrr_vpnserverrr_vpnserverrr_vpnserverrr?ed=2560
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-005
-  type: vless
-  network: ws
-  uuid: 764ce064-b6e7-4279-a014-4547883eee15
-  server: 198.41.215.140
-  servername: kourosh-asli-ncjeuv.kourosh-gnlroc.workers.dev
-  port: 8080
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: kourosh-asli-ncjeuv.kourosh-gnlroc.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /kouroshasli_panel
-  encryption: none
-- name: 其他-006
-  type: vless
-  network: ws
-  uuid: 3087ca05-1a7c-45fa-aec9-805adeaedb1b
-  server: 104.18.131.112
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: tianshu.kevqwkt451.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /?ed=2560
-  encryption: none
-- name: 其他-007
-  type: vless
-  network: ws
-  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
-  server: 172.64.94.251
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: yellow-mouse-fcce.400-318.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 其他-008
-  type: vless
-  network: ws
-  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
-  server: 198.41.219.218
-  servername: zyzzzoao.xn--fiqv8j.eu.org
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: zyzzzoao.xn--fiqv8j.eu.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?ed=2048fp=randomized
-  client-fingerprint: chrome
-- name: 其他-009
-  type: vless
-  network: ws
-  uuid: 99f47101-c1d9-45ac-b8e6-21bb121b56f2
-  server: 104.21.62.222
-  servername: zeus-panel-6px42t.kingworker1111peekconfig.workers.dev
-  port: 8080
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: zeus-panel-6px42t.kingworker1111peekconfig.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/43.0.2357.65 Safari/537.36
-    path: /
-  encryption: none
-- name: 其他-010
-  type: vless
-  network: ws
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  server: www.csgo.net
-  servername: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-  port: 2095
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-    path: /
-  client-fingerprint: randomized
-- name: 其他-011
-  type: vless
-  network: ws
-  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
-  server: cf.877771.xyz
-  servername: zyzzzoao.xn--fiqv8j.eu.org
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: zyzzzoao.xn--fiqv8j.eu.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2048fp=randomized
-  client-fingerprint: chrome
-- name: 其他-012
-  type: vless
-  network: ws
-  uuid: 59a0424b-d36b-4685-bac5-89d50d8969a8
-  server: 104.16.100.66
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: billowing-snowflake-f056.63-f14.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.99 Safari/537.36
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 其他-013
-  type: vless
-  network: ws
-  uuid: d1eeb74f-e5ea-45eb-9934-5376bfeb5ba4
-  server: 104.17.21.32
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: fragrant-shape-07a0.269-144.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 其他-014
-  type: vless
-  network: ws
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  server: itarmy.com.ua
-  servername: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-  port: 2095
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-    path: /
-  client-fingerprint: randomized
-- name: 其他-015
-  type: vless
-  network: ws
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  server: 104.27.82.154
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 其他-016
-  type: vless
-  network: ws
-  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
-  server: 104.25.118.238
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: billowing-cloud-d339.sospanel.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.109 Safari/537.36
-    path: /eyJqdW5rIjoiOFRwTjlPWHgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560
-- name: 其他-017
-  type: vless
-  network: http
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  server: gr1.fifapes.monster
-  port: 8882
-  udp: true
-  xudp: true
-  http-opts:
-    path:
-    - /
-  encryption: none
-- name: 其他-018
-  type: vless
-  network: ws
-  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
-  server: www.gov.ua
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: snowy-lab-6cab.237-2da.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 其他-019
-  type: vless
-  network: ws
-  uuid: abd3678b-f654-404c-adc7-1355865197e1
-  server: 104.21.25.168
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: vless.a-amr79.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /eyJqdW5rIjoiNUZVWmdPNWNpTW5LOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-- name: 其他-020
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 172.64.52.152
-  servername: t1s1.rittbo.kdns.fr
-  port: 8443
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-  ech-opts:
-    _dns: https://dns.alidns.com/dns-query
-    enable: true
-    query-server-name: cloudflare-ech.com
-  packet-encoding: xudp
-- name: 其他-021
-  type: vless
-  network: ws
-  uuid: d682c8f4-e719-577e-cbe9-2e5b00000002
-  server: 104.21.19.53
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: 0406.infinityconfig7.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: /sync
-  encryption: none
-- name: 其他-022
-  type: vless
-  network: ws
-  uuid: 98d61ee4-d777-479d-b326-3daa7dad3289
-  server: 172.67.209.232
-  port: 8080
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: zeus-panel-ufqzuq.peekconfiggggg1w.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /
-  encryption: none
-- name: 其他-023
-  type: vless
-  network: ws
-  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
-  server: 104.20.2.221
-  servername: bycf.lzjnb.shop
-  port: 8443
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: bycf.lzjnb.shop
-    path: /
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-  client-fingerprint: chrome
-- name: 其他-024
-  type: trojan
-  network: ws
-  server: 104.19.208.184
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.multiplydose.com
-  ws-opts:
-    headers:
-      Host: www.multiplydose.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /assignment
-  client-fingerprint: chrome
-- name: 其他-025
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 162.159.21.206
-  servername: t1s1.rittbo.kdns.fr
-  port: 2083
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-  ech-opts:
-    _dns: https://dns.alidns.com/dns-query
-    enable: true
-    query-server-name: cloudflare-ech.com
-  packet-encoding: xudp
-- name: 其他-026
-  type: vless
-  network: ws
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-  server: 8.47.69.0
-  servername: shegeftihaaa.net
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: shegeftihaaa.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /rsedgws
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-027
-  type: vless
-  network: ws
-  uuid: a7f37112-c2e2-4e36-a5ea-7de30b691514
-  server: 104.21.80.59
-  port: 8080
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: zeus-panel-t3iaiy.kingworker3133.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.162 Safari/537.36
-    path: /
-  encryption: none
-- name: 其他-028
-  type: vless
-  network: http
-  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
-  server: 172.65.111.43
-  port: 22
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  xudp: true
-  tfo: false
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  encryption: none
-- name: 其他-029 |1.6MB/s
-  type: http
-  server: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
-  port: 3443
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  tls: true
-  sni: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
-- name: 其他-030
-  type: vless
-  network: ws
-  uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
-  server: www.speedtest.net
-  port: 2086
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-  encryption: none
-- name: 其他-031 |852KB/s
-  type: http
-  server: 5b4aa1c4-t9zts0-tb592v-4lg6.sg.oshuawei.com
-  port: 443
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  tls: true
-  sni: 5b4aa1c4-t9zts0-tb592v-4lg6.sg.oshuawei.com
-  username: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-- name: 其他-032 |833KB/s
-  type: http
-  server: 929a4b9a-t9zts0-tnnrly-g43g.sg.oshuawei.com
-  port: 443
-  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-  tls: true
-  sni: 929a4b9a-t9zts0-tnnrly-g43g.sg.oshuawei.com
-  username: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-- name: 其他-033 |711KB/s
-  type: http
-  server: 2af4e0ee-ta1og0-ta6lxc-jjv2.sg.oshuawei.com
-  port: 443
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  tls: true
-  sni: 2af4e0ee-ta1og0-ta6lxc-jjv2.sg.oshuawei.com
-  username: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-- name: 其他-034 |696KB/s
-  type: http
-  server: e8f29734-t9zts0-tm23vf-1jk6u.sg.oshuawei.com
-  port: 443
-  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
-  tls: true
-  sni: e8f29734-t9zts0-tm23vf-1jk6u.sg.oshuawei.com
-  username: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
-- name: 其他-035 |685KB/s
-  type: http
-  server: b3f437cd-ta1og0-tb08pe-luwe.sg.oshuawei.com
-  port: 443
-  password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  tls: true
-  sni: b3f437cd-ta1og0-tb08pe-luwe.sg.oshuawei.com
-  username: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-- name: 其他-036 |632KB/s
-  type: trojan
-  network: ws
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.ignitelimit.com
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-    path: assignment
-  client-fingerprint: chrome
-- name: 其他-037 |613KB/s
-  type: http
-  server: 142c7edb-ta1og0-tkka1f-1k25p.sg.oshuawei.com
-  port: 443
-  password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
-  tls: true
-  sni: 142c7edb-ta1og0-tkka1f-1k25p.sg.oshuawei.com
-  username: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
-- name: 其他-038 |596KB/s
-  type: http
-  server: 0b8b1f48-t9zts0-tiaexf-ufc0.sg.oshuawei.com
-  port: 443
-  password: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  tls: true
-  sni: 0b8b1f48-t9zts0-tiaexf-ufc0.sg.oshuawei.com
-  username: 22308988-8548-11ea-a22e-f23c91cfbbc9
-- name: 其他-039 |527KB/s
-  type: http
-  server: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
-  port: 443
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  tls: true
-  sni: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
-  username: c11ff50c-f582-11ee-94df-f23c9164ca5d
-- name: 其他-040 |526KB/s
-  type: http
-  server: afbf4e3b-t9zts0-tdfzix-fm2v.hkt.cdnhuawei.com
-  port: 8443
-  password: <password>
-  tls: true
-  sni: afbf4e3b-t9zts0-tdfzix-fm2v.hkt.cdnhuawei.com
-  username: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
-- name: 其他-041 |517KB/s
-  type: http
-  server: 0178d9b3-te9j40-tir0zk-1hpo0.jp.oshuawei.com
-  port: 443
-  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  tls: true
-  sni: 0178d9b3-te9j40-tir0zk-1hpo0.jp.oshuawei.com
-  username: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-- name: 其他-042 |515KB/s
-  type: http
-  server: 5c7228b4-t9zts0-tdadcv-1hd7v.jp.oshuawei.com
-  port: 443
-  password: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-  tls: true
-  sni: 5c7228b4-t9zts0-tdadcv-1hd7v.jp.oshuawei.com
-  username: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-- name: 其他-043
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 172.64.145.158
-  servername: t1s1.rittbo.kdns.fr
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-044
-  type: vless
-  network: ws
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  server: 172.64.152.241
-  servername: t1s1.rittbo.kdns.fr
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-045
-  type: vless
-  network: ws
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  server: 104.16.72.70
-  servername: nbhhh.mrcool.kdns.fr
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /proxyip
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-046
-  type: trojan
-  network: ws
-  server: 172.66.46.250
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  sni: hhcm.hhxaf.cc.cd
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  client-fingerprint: chrome
-- name: 其他-047
-  type: vless
-  network: ws
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  server: 104.18.153.10
-  servername: vangoghhh.info
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
-    path: /rdfgtws
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-048
-  type: vless
-  network: ws
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  server: www.fbi.gov
-  servername: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-  port: 2095
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-    path: /
-  client-fingerprint: randomized
-- name: 其他-049
-  type: vless
-  network: ws
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  server: cf5.466688.xyz
-  servername: mia3.pages.dev
-  port: 443
-  tls: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: mia3.pages.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /buy/out.php?ed=2560
-  client-fingerprint: chrome
-  encryption: none
-- name: 其他-050
-  type: vless
-  network: ws
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  server: 104.16.0.54
-  port: 443
-  tls: true
-  udp: false
-  sni: 2026062622.yzqiang6.de5.net
-  ws-opts:
-    headers:
-      Host: 2026062622.yzqiang6.de5.net
-    path: /?ed=2048
-  client-fingerprint: chrome
-- name: 其他-051
   type: vless
   network: ws
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -761,7 +99,267 @@ proxies:
     enable: true
     query-server-name: cloudflare-ech.com
   packet-encoding: xudp
-- name: 其他-052
+- name: 其他-004
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 162.159.21.206
+  servername: t1s1.rittbo.kdns.fr
+  port: 2083
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-005
+  type: vless
+  network: ws
+  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
+  server: 172.64.155.209
+  servername: cf.cfvip.lol
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: cf.cfvip.lol
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /pyip=47.251.95.178
+  client-fingerprint: chrome
+- name: 其他-006
+  type: vless
+  network: ws
+  uuid: 59a0424b-d36b-4685-bac5-89d50d8969a8
+  server: 104.16.100.66
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: billowing-snowflake-f056.63-f14.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 其他-007
+  type: vless
+  network: ws
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: docs.cloudflare.com
+  servername: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+  port: 2095
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+    path: /
+  client-fingerprint: randomized
+- name: 其他-008
+  type: vless
+  network: ws
+  uuid: 3087ca05-1a7c-45fa-aec9-805adeaedb1b
+  server: 104.18.131.112
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: tianshu.kevqwkt451.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /?ed=2560
+  encryption: none
+- name: 其他-009
+  type: vless
+  network: ws
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  server: 104.16.106.213
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 其他-010
+  type: vless
+  network: ws
+  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
+  server: 162.159.141.147
+  servername: rayan-007.foton.dpdns.org
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: rayan-007.foton.dpdns.org
+    path: /
+  client-fingerprint: chrome
+- name: 其他-011
+  type: vless
+  network: ws
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  server: courses.mftplus.qzz.io
+  servername: courses.mftplus.qzz.io
+  port: 2096
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: courses.mftplus.qzz.io
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+  client-fingerprint: chrome
+- name: 其他-012
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 104.17.180.39
+  servername: t1s1.rittbo.kdns.fr
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-013
+  type: vless
+  network: ws
+  uuid: 565326ee-c588-4843-9472-a051578ab1ae
+  server: 162.159.156.214
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: lucky-cell-e8c5.490-f12.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 其他-014
+  type: vless
+  network: ws
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  server: 104.20.2.221
+  servername: bycf.lzjnb.shop
+  port: 8443
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: bycf.lzjnb.shop
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  client-fingerprint: chrome
+- name: 其他-015
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.52.134
+  servername: t1s1.rittbo.kdns.fr
+  port: 8443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-016
+  type: vless
+  network: ws
+  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
+  server: 104.27.82.154
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: gentle-surf-cc74.345-604.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 其他-017
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.52.152
+  servername: t1s1.rittbo.kdns.fr
+  port: 8443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-018
+  type: vless
+  network: http
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  server: gr1.fifapes.monster
+  port: 8882
+  udp: true
+  xudp: true
+  http-opts:
+    path:
+    - /
+  encryption: none
+- name: 其他-019
+  type: vless
+  network: ws
+  uuid: a51d8a82-faec-44f4-8882-441a2e7f0ce4
+  server: 172.66.200.130
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: spring-math-5c8c.434.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  encryption: none
+- name: 其他-020
   type: vless
   network: ws
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -782,53 +380,51 @@ proxies:
     enable: true
     query-server-name: cloudflare-ech.com
   packet-encoding: xudp
-- name: 其他-053
+- name: 其他-021
   type: vless
-  network: ws
-  uuid: 47667ac5-ac51-7fc6-181f-65321ee2387b
-  server: svg-2.onrender.com
-  servername: svg-2.onrender.com
+  network: xhttp
+  uuid: 17d53a3b-ba7f-4adb-8885-8bb135ee2ebe
+  server: cdn-mws.garagecloud.ru
+  servername: cdn-mws.garagecloud.ru
   port: 443
-  skip-cert-verify: false
   tls: true
   udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: svg-2.onrender.com
-    path: /ws/47667ac5-ac51-7fc6-181f-65321ee2387b
-  client-fingerprint: chrome
-- name: 其他-054
-  type: trojan
-  network: ws
-  server: saas.sin.fan
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  skip-cert-verify: false
-  sni: hhcm.hhxaf.cc.cd
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-    path: /
-- name: 其他-055
+  xudp: true
+  client-fingerprint: firefox
+  xhttp-opts:
+    path: /xh/ae8091c1597a
+- name: 其他-022
   type: vless
   network: ws
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-  server: 104.26.14.137
-  servername: shegeftihaaa.net
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+  server: 198.41.219.218
+  servername: zyzzzoao.xn--fiqv8j.eu.org
   port: 443
   tls: true
   udp: true
   xudp: true
   ws-opts:
     headers:
-      Host: shegeftihaaa.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /rsedgws
+      Host: zyzzzoao.xn--fiqv8j.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2048fp=randomized
   client-fingerprint: chrome
-  encryption: none
-- name: 其他-056
+- name: 其他-023
+  type: vless
+  network: ws
+  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+  server: 172.64.94.251
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: yellow-mouse-fcce.400-318.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 其他-024
   type: trojan
   network: tcp
   server: jpbgp.netvigor.cc
@@ -837,7 +433,64 @@ proxies:
   udp: true
   sni: yazhou10.dynu.net
   client-fingerprint: chrome
-- name: 其他-057 |1.0MB/s|YT-CN
+- name: 其他-025
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.40.84
+  servername: t1s1.rittbo.kdns.fr
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  encryption: none
+  client-fingerprint: chrome
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-026
+  type: vless
+  network: ws
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 172.64.35.206
+  servername: t1s1.rittbo.kdns.fr
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+  client-fingerprint: chrome
+  encryption: none
+  ech-opts:
+    _dns: https://dns.alidns.com/dns-query
+    enable: true
+    query-server-name: cloudflare-ech.com
+  packet-encoding: xudp
+- name: 其他-027
+  type: vless
+  network: ws
+  uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
+  server: www.speedtest.net
+  port: 2086
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
+  encryption: none
+- name: 其他-028 |1.0MB/s|YT-CN
   type: http
   server: b7d2d774-t9zts0-thpx3l-141tv.hkt.cdnhuawei.com
   port: 8443
@@ -845,31 +498,23 @@ proxies:
   tls: true
   sni: b7d2d774-t9zts0-thpx3l-141tv.hkt.cdnhuawei.com
   username: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-- name: 其他-058 |781KB/s
+- name: 其他-029 |833KB/s
   type: http
-  server: 02da54f5-t9zts0-tlm64c-xm0q.sg.oshuawei.com
+  server: 929a4b9a-t9zts0-tnnrly-g43g.sg.oshuawei.com
   port: 443
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
   tls: true
-  sni: 02da54f5-t9zts0-tlm64c-xm0q.sg.oshuawei.com
-  username: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-- name: 其他-059 |768KB/s
+  sni: 929a4b9a-t9zts0-tnnrly-g43g.sg.oshuawei.com
+  username: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+- name: 其他-030 |812KB/s
   type: http
-  server: c21a7769-t9zts0-tdfzix-fm2v.sg.oshuawei.com
+  server: f6990909-ta1og0-tb74a6-1q9g2.sg.oshuawei.com
   port: 443
-  password: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
+  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
   tls: true
-  sni: c21a7769-t9zts0-tdfzix-fm2v.sg.oshuawei.com
-  username: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
-- name: 其他-060 |533KB/s
-  type: http
-  server: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
-  port: 443
-  password: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-  tls: true
-  sni: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
-  username: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-- name: 其他-061 |523KB/s
+  sni: f6990909-ta1og0-tb74a6-1q9g2.sg.oshuawei.com
+  username: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
+- name: 其他-031 |523KB/s
   type: http
   server: 13f4082b-tegxs0-thpx3l-141tv.jp.oshuawei.com
   port: 443
@@ -877,7 +522,305 @@ proxies:
   tls: true
   sni: 13f4082b-tegxs0-thpx3l-141tv.jp.oshuawei.com
   username: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-- name: 其他-062
+- name: 其他-032
+  type: vless
+  network: ws
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: openai.com
+  port: 2095
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-q.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  encryption: none
+- name: 其他-033
+  type: trojan
+  network: ws
+  server: store.ubi.com
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- name: 其他-034
+  type: vless
+  network: ws
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  server: 162.159.2.87
+  servername: support.zoom.us.yxls.eu.cc
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /sg-amz
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-035
+  type: vless
+  network: ws
+  uuid: 752a3a41-8430-4dd3-99cc-36b14d3800d6
+  server: 172.67.212.210
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: empty-water-4dd1.qara-atayi-3.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /eyJqdW5rIjoiYm0zWkp6N1UiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560
+  encryption: none
+- name: 其他-036
+  type: vless
+  network: ws
+  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
+  server: www.gov.ua
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: snowy-lab-6cab.237-2da.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 其他-037
+  type: vless
+  network: ws
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+  server: cf.877771.xyz
+  servername: zyzzzoao.xn--fiqv8j.eu.org
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: zyzzzoao.xn--fiqv8j.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2048fp=randomized
+  client-fingerprint: chrome
+- name: 其他-038
+  type: vmess
+  network: tcp
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  server: v45.hdacd.com
+  port: 30845
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  xudp: true
+  alterId: 2
+  cipher: auto
+- name: 其他-039
+  type: vless
+  network: ws
+  uuid: abd3678b-f654-404c-adc7-1355865197e1
+  server: 104.21.25.168
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: vless.a-amr79.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /eyJqdW5rIjoiNUZVWmdPNWNpTW5LOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+- name: 其他-040
+  type: vless
+  network: ws
+  uuid: 99f47101-c1d9-45ac-b8e6-21bb121b56f2
+  server: 104.21.62.222
+  servername: zeus-panel-6px42t.kingworker1111peekconfig.workers.dev
+  port: 8080
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: zeus-panel-6px42t.kingworker1111peekconfig.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /
+  encryption: none
+- name: 其他-041
+  type: trojan
+  network: ws
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 其他-042
+  type: vless
+  network: ws
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  server: 172.64.32.75
+  servername: vangoghhh.info
+  port: 443
+  tls: true
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: vangoghhh.info
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /rdfgtws
+  client-fingerprint: chrome
+  encryption: none
+- name: 其他-043
+  type: vless
+  network: ws
+  uuid: d682c8f4-e719-577e-cbe9-2e5b00000002
+  server: 104.21.19.53
+  port: 80
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: 0406.infinityconfig7.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
+    path: /sync
+  encryption: none
+- name: 其他-044 |811KB/s
+  type: http
+  server: bb7c1f57-t9zts0-tcmifz-1s3lb.sg.oshuawei.com
+  port: 443
+  password: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+  tls: true
+  sni: bb7c1f57-t9zts0-tcmifz-1s3lb.sg.oshuawei.com
+  username: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+- name: 其他-045 |781KB/s
+  type: http
+  server: 02da54f5-t9zts0-tlm64c-xm0q.sg.oshuawei.com
+  port: 443
+  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  tls: true
+  sni: 02da54f5-t9zts0-tlm64c-xm0q.sg.oshuawei.com
+  username: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+- name: 其他-046 |730KB/s
+  type: http
+  server: 38aa4bb3-t9zts0-td5oia-1m49t.sg.oshuawei.com
+  port: 443
+  password: c357a728-1211-11f0-9a65-f23c9164ca5d
+  tls: true
+  sni: 38aa4bb3-t9zts0-td5oia-1m49t.sg.oshuawei.com
+  username: c357a728-1211-11f0-9a65-f23c9164ca5d
+- name: 其他-047 |711KB/s
+  type: http
+  server: 2af4e0ee-ta1og0-ta6lxc-jjv2.sg.oshuawei.com
+  port: 443
+  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  tls: true
+  sni: 2af4e0ee-ta1og0-ta6lxc-jjv2.sg.oshuawei.com
+  username: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+- name: 其他-048 |685KB/s
+  type: http
+  server: b3f437cd-ta1og0-tb08pe-luwe.sg.oshuawei.com
+  port: 443
+  password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  tls: true
+  sni: b3f437cd-ta1og0-tb08pe-luwe.sg.oshuawei.com
+  username: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+- name: 其他-049 |613KB/s
+  type: http
+  server: 142c7edb-ta1og0-tkka1f-1k25p.sg.oshuawei.com
+  port: 443
+  password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+  tls: true
+  sni: 142c7edb-ta1og0-tkka1f-1k25p.sg.oshuawei.com
+  username: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+- name: 其他-050 |578KB/s
+  type: http
+  server: e8d29ed9-t9zts0-tsdg75-tlhh.sg.oshuawei.com
+  port: 443
+  password: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  tls: true
+  sni: e8d29ed9-t9zts0-tsdg75-tlhh.sg.oshuawei.com
+  username: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+- name: 其他-051
+  type: vless
+  network: http
+  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
+  server: 172.65.111.43
+  port: 22
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  xudp: true
+  tfo: false
+  http-opts:
+    method: GET
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+  encryption: none
+- name: 其他-052 |1.6MB/s
+  type: http
+  server: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
+  port: 3443
+  password: 0b869f32-657e-11ee-a90c-f23c9313b177
+  tls: true
+  sni: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
+  username: 0b869f32-657e-11ee-a90c-f23c9313b177
+- name: 其他-053 |527KB/s
+  type: http
+  server: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
+  port: 443
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  tls: true
+  sni: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
+  username: c11ff50c-f582-11ee-94df-f23c9164ca5d
+- name: 其他-054 |526KB/s
+  type: http
+  server: afbf4e3b-t9zts0-tdfzix-fm2v.hkt.cdnhuawei.com
+  port: 8443
+  password: <password>
+  tls: true
+  sni: afbf4e3b-t9zts0-tdfzix-fm2v.hkt.cdnhuawei.com
+  username: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
+- name: 其他-055 |517KB/s
+  type: http
+  server: 0178d9b3-te9j40-tir0zk-1hpo0.jp.oshuawei.com
+  port: 443
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  tls: true
+  sni: 0178d9b3-te9j40-tir0zk-1hpo0.jp.oshuawei.com
+  username: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+- name: 其他-056 |515KB/s
+  type: http
+  server: 5c7228b4-t9zts0-tdadcv-1hd7v.jp.oshuawei.com
+  port: 443
+  password: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  tls: true
+  sni: 5c7228b4-t9zts0-tdadcv-1hd7v.jp.oshuawei.com
+  username: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+- name: 其他-057 |533KB/s
+  type: http
+  server: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
+  port: 443
+  password: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+  tls: true
+  sni: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
+  username: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+- name: 其他-058
   type: vless
   network: ws
   uuid: a0fe052d-6ca1-4a9c-b626-7ecf78f386cb
@@ -892,7 +835,7 @@ proxies:
     v2ray-http-upgrade-fast-open: true
   client-fingerprint: chrome
   encryption: none
-- name: 其他-063
+- name: 其他-059
   type: vless
   network: ws
   uuid: 3adac494-0eb1-4d89-a187-b2181691444d
@@ -906,7 +849,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
     path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 其他-064
+- name: 其他-060
   type: vless
   network: ws
   uuid: 192bc523-26fe-4233-b10d-725deb710ea5
@@ -924,7 +867,7 @@ proxies:
     path: /us-gllc
   client-fingerprint: chrome
   encryption: none
-- name: 其他-065 |4.8MB/s
+- name: 其他-061 |4.8MB/s
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -939,7 +882,7 @@ proxies:
         like Gecko) Chrome/66.0.3359.117 Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
-- name: 其他-066 |3.2MB/s|TK-US|YT-US|GPT⁺-SG|GM-US
+- name: 其他-062 |3.2MB/s|TK-US|YT-US|GPT⁺-SG|GM-US
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -954,7 +897,7 @@ proxies:
         Gecko) Chrome/45.0.2454.85 Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
-- name: 其他-067 |3.0MB/s|YT-HK|GPT⁺-SG
+- name: 其他-063 |3.0MB/s|YT-HK|GPT⁺-SG
   type: vless
   network: ws
   uuid: df301b32-1152-4526-9a63-beedd93d3156
@@ -969,6 +912,22 @@ proxies:
         like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
     path: '%2F%3Fed%3D2048'
   encryption: none
+- name: 加拿大-001
+  type: vless
+  network: ws
+  uuid: 3ea0a12e-162e-45b8-b03b-c490d6105091
+  server: 23.227.38.91
+  servername: wa2.mhrnet.com
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: wa2.mhrnet.com
+    path: /
+  client-fingerprint: chrome
 - name: 南非-001
   type: vless
   network: ws
@@ -1013,23 +972,35 @@ proxies:
     mode: auto
     path: /v2raylink
   encryption: none
-- name: 塞舌尔-003
-  type: vless
-  network: xhttp
-  uuid: ac006062-f051-43c6-bd4c-f409285c8635
-  server: 45.130.125.6
-  servername: germany4.alibaba1405.org
-  port: 443
-  tls: true
+- name: 德国-001 |1.6MB/s
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  skip-cert-verify: true
   udp: true
-  xudp: true
-  client-fingerprint: chrome
-  encryption: none
-  xhttp-opts:
-    host: germany4.alibaba1405.org
-    mode: auto
-    path: /v2raylink
-- name: 德国-001
+  sni: apple.com
+  alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  protocol: udp
+  up: 500
+- name: 德国-002 |594KB/s
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  skip-cert-verify: true
+  udp: true
+  sni: apple.com
+  alpn:
+  - h3
+  protocol: udp
+  auth-str: dongtaiwang.com
+  up: 500
+  down: 1000
+  auth_str: dongtaiwang.com
+- name: 德国-003
   type: vless
   network: ws
   uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
@@ -1047,49 +1018,36 @@ proxies:
     path: /download.php
   client-fingerprint: chrome
   encryption: none
-- name: 德国-002 |1.6MB/s
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  skip-cert-verify: true
+- name: 新西兰-001
+  type: vless
+  network: ws
+  uuid: 3ea0a12e-162e-45b8-b03b-c490d6105091
+  server: 114.129.43.130
+  servername: wa2.mhrnet.com
+  port: 443
+  skip-cert-verify: false
+  tls: true
   udp: true
-  sni: apple.com
-  alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  protocol: udp
-  up: 500
+  tfo: false
+  ws-opts:
+    headers:
+      Host: wa2.mhrnet.com
+    path: /
+  client-fingerprint: chrome
 - name: 澳大利亚-001 |3.0MB/s|TK-AU|YT-AU|GPT⁺-AU
   type: http
   server: 159.13.44.228
   port: 443
   skip-cert-verify: true
   tls: true
-- name: 罗马尼亚-001
-  type: vless
-  network: ws
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  server: 45.12.30.30
-  port: 8880
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: vms.lifetime28.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
-    path: /
-  encryption: none
-- name: 罗马尼亚-002 |4.2MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
+- name: 罗马尼亚-001 |4.2MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
   type: http
   server: 84.239.49.160
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-003 |4.1MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-002 |4.1MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 84.239.49.227
   port: 9002
@@ -1097,28 +1055,28 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-004 |3.5MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-003 |3.5MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
   type: http
   server: 84.239.49.220
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-005 |3.4MB/s|TK-RO|YT-CN|GPT⁺-RO
+- name: 罗马尼亚-004 |3.4MB/s|TK-RO|YT-CN|GPT⁺-RO
   type: http
   server: 84.239.49.199
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-006 |3.4MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
+- name: 罗马尼亚-005 |3.4MB/s|TK-RO|YT-UA|GPT⁺-RO|GM-UA
   type: http
   server: 84.239.49.215
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-007 |3.4MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-006 |3.4MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 84.239.14.147
   port: 9002
@@ -1126,7 +1084,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-008 |3.3MB/s|TK-RO|YT-CN|GPT⁺-RO
+- name: 罗马尼亚-007 |3.3MB/s|TK-RO|YT-CN|GPT⁺-RO
   type: http
   server: 84.239.49.223
   port: 9002
@@ -1134,16 +1092,23 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-009 |3.3MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-008 |3.3MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 193.176.84.35
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-010 |3.2MB/s|TK-RO|YT-CN|GPT⁺-RO
+- name: 罗马尼亚-009 |3.2MB/s|TK-RO|YT-CN|GPT⁺-RO
   type: http
   server: 84.239.49.187
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-010 |3.1MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
+  type: http
+  server: 84.239.49.165
   port: 9002
   skip-cert-verify: true
   tls: true
@@ -1163,33 +1128,34 @@ proxies:
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-013 |3.1MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
-  type: http
-  server: 84.239.49.165
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-014 |2.9MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-013 |2.9MB/s|TK-RO|YT-RO|GPT⁺-RO|GM-RO
   type: http
   server: 84.239.49.225
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-015 |2.3MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-014 |2.3MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
   server: 193.176.84.17
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-016 |1.5MB/s
+- name: 罗马尼亚-015 |1.5MB/s
   type: http
   server: 84.239.49.53
   port: 9002
   skip-cert-verify: true
   tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-016 |1.4MB/s
+  type: http
+  server: 84.239.49.201
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
   sni: www.bing.com
 - name: 罗马尼亚-017 |1.4MB/s
   type: http
@@ -1200,27 +1166,26 @@ proxies:
   sni: www.bing.com
 - name: 罗马尼亚-018 |1.4MB/s
   type: http
-  server: 84.239.49.201
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-019 |1.4MB/s
-  type: http
   server: 84.239.49.209
   port: 9002
   skip-cert-verify: true
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-020 |1.3MB/s
+- name: 罗马尼亚-019 |1.3MB/s
   type: http
   server: 193.176.84.36
   port: 9002
   skip-cert-verify: true
   tls: true
   udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-020 |1.2MB/s
+  type: http
+  server: 84.239.14.159
+  port: 9002
+  skip-cert-verify: true
+  tls: true
   sni: www.bing.com
 - name: 罗马尼亚-021 |1.2MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
@@ -1231,26 +1196,12 @@ proxies:
   sni: www.bing.com
 - name: 罗马尼亚-022 |1.2MB/s
   type: http
-  server: 84.239.14.159
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-023 |1.2MB/s
-  type: http
   server: 193.176.84.32
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-024 |1.1MB/s
-  type: http
-  server: 84.239.49.166
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-025 |1.1MB/s
+- name: 罗马尼亚-023 |1.1MB/s
   type: http
   server: 84.239.49.191
   port: 9002
@@ -1258,14 +1209,14 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-026 |1.1MB/s
+- name: 罗马尼亚-024 |1.1MB/s|TK-RO|GPT⁺-RO|GM-RO
   type: http
-  server: 84.239.49.254
+  server: 193.176.84.30
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-027 |1.1MB/s
+- name: 罗马尼亚-025 |1.1MB/s
   type: http
   server: 84.239.49.231
   port: 9002
@@ -1273,94 +1224,63 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-028 |1.1MB/s
-  type: http
-  server: 84.239.49.59
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-029 |1.1MB/s
+- name: 罗马尼亚-026 |1.1MB/s
   type: http
   server: 193.176.84.40
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-030 |1.1MB/s|TK-RO|GPT⁺-RO|GM-RO
+- name: 罗马尼亚-027 |1.1MB/s
   type: http
-  server: 193.176.84.30
+  server: 84.239.49.166
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-028 |1.1MB/s
+  type: http
+  server: 84.239.49.254
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-029 |1.1MB/s
+  type: http
+  server: 84.239.49.59
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-030 |1.0MB/s
+  type: http
+  server: 84.239.49.249
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
 - name: 罗马尼亚-031 |1.0MB/s
   type: http
-  server: 84.239.49.38
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-032 |1.0MB/s
-  type: http
-  server: 84.239.49.240
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-033 |1.0MB/s
-  type: http
   server: 84.239.49.200
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-034 |1.0MB/s
+- name: 罗马尼亚-032 |1.0MB/s
   type: http
-  server: 84.239.49.49
+  server: 84.239.49.171
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-035 |1.0MB/s
-  type: http
-  server: 84.239.49.192
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-036 |1.0MB/s
-  type: http
-  server: 84.239.49.164
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-037 |1.0MB/s
+- name: 罗马尼亚-033 |1.0MB/s
   type: http
   server: 84.239.49.42
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-038 |1.0MB/s
-  type: http
-  server: 84.239.49.40
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-039 |1.0MB/s
-  type: http
-  server: 193.176.84.26
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-040 |1.0MB/s
+- name: 罗马尼亚-034 |1.0MB/s
   type: http
   server: 84.239.14.146
   port: 9002
@@ -1368,51 +1288,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-041 |1.0MB/s
-  type: http
-  server: 84.239.49.159
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-042 |1.0MB/s
-  type: http
-  server: 84.239.49.171
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-043 |1.0MB/s
-  type: http
-  server: 84.239.49.239
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-044 |1.0MB/s
-  type: http
-  server: 84.239.49.249
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-045 |1.0MB/s
-  type: http
-  server: 84.239.49.185
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-046 |1.0MB/s
-  type: http
-  server: 84.239.49.198
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-047 |1.0MB/s
+- name: 罗马尼亚-035 |1.0MB/s
   type: http
   server: 84.239.14.158
   port: 9002
@@ -1420,28 +1296,110 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-048 |1.0MB/s
+- name: 罗马尼亚-036 |1.0MB/s
+  type: http
+  server: 84.239.49.239
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-037 |1.0MB/s
+  type: http
+  server: 84.239.49.198
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-038 |1.0MB/s
+  type: http
+  server: 84.239.49.185
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-039 |1.0MB/s
+  type: http
+  server: 84.239.49.192
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-040 |1.0MB/s
+  type: http
+  server: 84.239.49.159
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-041 |1.0MB/s
   type: http
   server: 193.176.84.23
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-049 |1020KB/s
+- name: 罗马尼亚-042 |1.0MB/s
+  type: http
+  server: 193.176.84.26
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-043 |1.0MB/s
+  type: http
+  server: 84.239.49.164
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-044 |1.0MB/s
+  type: http
+  server: 84.239.49.240
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-045 |1.0MB/s
+  type: http
+  server: 84.239.49.49
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-046 |1.0MB/s
+  type: http
+  server: 84.239.49.38
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-047 |1.0MB/s
+  type: http
+  server: 84.239.49.40
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  sni: www.bing.com
+- name: 罗马尼亚-048 |1020KB/s
   type: http
   server: 193.176.84.22
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-050 |980KB/s
+- name: 罗马尼亚-049 |980KB/s
   type: http
   server: 84.239.49.230
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-051 |973KB/s
+- name: 罗马尼亚-050 |973KB/s
   type: http
   server: 84.239.49.235
   port: 9002
@@ -1449,14 +1407,14 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-052 |968KB/s
+- name: 罗马尼亚-051 |968KB/s
   type: http
   server: 193.176.84.37
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-053 |951KB/s
+- name: 罗马尼亚-052 |951KB/s
   type: http
   server: 84.239.49.182
   port: 9002
@@ -1464,21 +1422,21 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-054 |947KB/s
+- name: 罗马尼亚-053 |947KB/s
   type: http
   server: 84.239.49.183
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-055 |943KB/s
+- name: 罗马尼亚-054 |943KB/s
   type: http
   server: 193.176.84.34
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-056 |935KB/s
+- name: 罗马尼亚-055 |935KB/s
   type: http
   server: 84.239.49.234
   port: 9002
@@ -1486,28 +1444,28 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-057 |906KB/s
+- name: 罗马尼亚-056 |906KB/s
   type: http
   server: 84.239.49.247
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-058 |895KB/s
+- name: 罗马尼亚-057 |895KB/s
   type: http
   server: 84.239.49.60
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-059 |891KB/s
+- name: 罗马尼亚-058 |891KB/s
   type: http
   server: 193.176.84.31
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-060 |890KB/s
+- name: 罗马尼亚-059 |890KB/s
   type: http
   server: 84.239.49.162
   port: 9002
@@ -1515,70 +1473,70 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-061 |880KB/s
+- name: 罗马尼亚-060 |880KB/s
   type: http
   server: 84.239.49.161
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-062 |871KB/s
+- name: 罗马尼亚-061 |871KB/s
   type: http
   server: 84.239.49.189
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-063 |869KB/s
+- name: 罗马尼亚-062 |869KB/s
   type: http
   server: 84.239.49.207
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-064 |867KB/s
+- name: 罗马尼亚-063 |867KB/s
   type: http
   server: 84.239.49.58
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-065 |856KB/s
+- name: 罗马尼亚-064 |856KB/s
   type: http
   server: 84.239.14.156
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-066 |821KB/s
+- name: 罗马尼亚-065 |821KB/s
   type: http
   server: 84.239.49.214
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-067 |820KB/s
+- name: 罗马尼亚-066 |820KB/s
   type: http
   server: 84.239.49.180
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-068 |819KB/s
+- name: 罗马尼亚-067 |819KB/s
   type: http
   server: 84.239.14.160
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-069 |816KB/s
+- name: 罗马尼亚-068 |816KB/s
   type: http
   server: 84.239.49.184
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-070 |808KB/s
+- name: 罗马尼亚-069 |808KB/s
   type: http
   server: 84.239.49.233
   port: 9002
@@ -1586,7 +1544,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-071 |787KB/s
+- name: 罗马尼亚-070 |787KB/s
   type: http
   server: 84.239.49.211
   port: 9002
@@ -1594,56 +1552,56 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-072 |782KB/s
+- name: 罗马尼亚-071 |782KB/s
   type: http
   server: 84.239.49.196
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-073 |781KB/s
+- name: 罗马尼亚-072 |781KB/s
   type: http
   server: 84.239.14.157
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-074 |768KB/s
+- name: 罗马尼亚-073 |768KB/s
   type: http
   server: 193.176.84.24
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-075 |765KB/s
+- name: 罗马尼亚-074 |765KB/s
   type: http
   server: 84.239.49.178
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-076 |757KB/s
+- name: 罗马尼亚-075 |757KB/s
   type: http
   server: 84.239.49.186
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-077 |756KB/s
+- name: 罗马尼亚-076 |756KB/s
   type: http
   server: 84.239.49.253
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-078 |750KB/s
+- name: 罗马尼亚-077 |750KB/s
   type: http
   server: 84.239.49.157
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-079 |738KB/s
+- name: 罗马尼亚-078 |738KB/s
   type: http
   server: 84.239.49.39
   port: 9002
@@ -1651,14 +1609,14 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-080 |731KB/s
+- name: 罗马尼亚-079 |731KB/s
   type: http
   server: 193.176.84.19
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-081 |728KB/s
+- name: 罗马尼亚-080 |728KB/s
   type: http
   server: 84.239.49.170
   port: 9002
@@ -1666,7 +1624,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-082 |724KB/s
+- name: 罗马尼亚-081 |724KB/s
   type: http
   server: 84.239.49.238
   port: 9002
@@ -1674,42 +1632,42 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-083 |721KB/s
+- name: 罗马尼亚-082 |721KB/s
   type: http
   server: 84.239.49.244
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-084 |717KB/s
+- name: 罗马尼亚-083 |717KB/s
   type: http
   server: 84.239.49.176
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-085 |717KB/s
+- name: 罗马尼亚-084 |717KB/s
   type: http
   server: 84.239.49.197
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-086 |678KB/s
+- name: 罗马尼亚-085 |678KB/s
   type: http
   server: 84.239.49.204
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-087 |664KB/s
+- name: 罗马尼亚-086 |664KB/s
   type: http
   server: 84.239.49.168
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-088 |653KB/s
+- name: 罗马尼亚-087 |653KB/s
   type: http
   server: 84.239.49.57
   port: 9002
@@ -1717,7 +1675,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-089 |651KB/s
+- name: 罗马尼亚-088 |651KB/s
   type: http
   server: 84.239.49.224
   port: 9002
@@ -1725,28 +1683,28 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-090 |644KB/s
+- name: 罗马尼亚-089 |644KB/s
   type: http
   server: 84.239.49.54
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-091 |639KB/s
+- name: 罗马尼亚-090 |639KB/s
   type: http
   server: 193.176.84.20
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-092 |634KB/s
+- name: 罗马尼亚-091 |634KB/s
   type: http
   server: 84.239.14.148
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-093 |625KB/s
+- name: 罗马尼亚-092 |625KB/s
   type: http
   server: 84.239.49.37
   port: 9002
@@ -1754,14 +1712,14 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-094 |622KB/s
+- name: 罗马尼亚-093 |622KB/s
   type: http
   server: 193.176.84.21
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-095 |617KB/s
+- name: 罗马尼亚-094 |617KB/s
   type: http
   server: 84.239.49.163
   port: 9002
@@ -1769,7 +1727,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-096 |603KB/s
+- name: 罗马尼亚-095 |603KB/s
   type: http
   server: 84.239.49.156
   port: 9002
@@ -1777,13 +1735,20 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-097 |595KB/s
+- name: 罗马尼亚-096 |595KB/s
   type: http
   server: 84.239.49.154
   port: 9002
   skip-cert-verify: true
   tls: true
   udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-097 |586KB/s
+  type: http
+  server: 193.176.84.25
+  port: 9002
+  skip-cert-verify: true
+  tls: true
   sni: www.bing.com
 - name: 罗马尼亚-098 |586KB/s
   type: http
@@ -1793,14 +1758,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-099 |586KB/s
-  type: http
-  server: 193.176.84.25
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  sni: www.bing.com
-- name: 罗马尼亚-100 |573KB/s
+- name: 罗马尼亚-099 |573KB/s
   type: http
   server: 84.239.14.152
   port: 9002
@@ -1808,49 +1766,49 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-101 |563KB/s
+- name: 罗马尼亚-100 |563KB/s
   type: http
   server: 84.239.14.154
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-102 |561KB/s
+- name: 罗马尼亚-101 |561KB/s
   type: http
   server: 84.239.49.181
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-103 |560KB/s
+- name: 罗马尼亚-102 |560KB/s
   type: http
   server: 84.239.49.213
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-104 |559KB/s
+- name: 罗马尼亚-103 |559KB/s
   type: http
   server: 84.239.49.48
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-105 |557KB/s
+- name: 罗马尼亚-104 |557KB/s
   type: http
   server: 193.176.84.39
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-106 |554KB/s
+- name: 罗马尼亚-105 |554KB/s
   type: http
   server: 193.176.84.38
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-107 |553KB/s
+- name: 罗马尼亚-106 |553KB/s
   type: http
   server: 84.239.49.175
   port: 9002
@@ -1858,7 +1816,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-108 |546KB/s
+- name: 罗马尼亚-107 |546KB/s
   type: http
   server: 84.239.49.155
   port: 9002
@@ -1866,7 +1824,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-109 |541KB/s
+- name: 罗马尼亚-108 |541KB/s
   type: http
   server: 84.239.49.242
   port: 9002
@@ -1874,15 +1832,7 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-110 |538KB/s
-  type: http
-  server: 84.239.49.202
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: www.bing.com
-- name: 罗马尼亚-111 |538KB/s
+- name: 罗马尼亚-109 |538KB/s
   type: http
   server: 84.239.49.55
   port: 9002
@@ -1890,35 +1840,43 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
-- name: 罗马尼亚-112 |538KB/s
+- name: 罗马尼亚-110 |538KB/s
   type: http
   server: 84.239.49.229
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-113 |535KB/s
+- name: 罗马尼亚-111 |538KB/s
+  type: http
+  server: 84.239.49.202
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: www.bing.com
+- name: 罗马尼亚-112 |535KB/s
   type: http
   server: 84.239.49.241
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-114 |529KB/s
+- name: 罗马尼亚-113 |529KB/s
   type: http
   server: 84.239.49.217
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-115 |527KB/s
+- name: 罗马尼亚-114 |527KB/s
   type: http
   server: 84.239.49.208
   port: 9002
   skip-cert-verify: true
   tls: true
   sni: www.bing.com
-- name: 罗马尼亚-116 |520KB/s
+- name: 罗马尼亚-115 |520KB/s
   type: http
   server: 84.239.49.219
   port: 9002
@@ -1926,7 +1884,37 @@ proxies:
   tls: true
   udp: true
   sni: www.bing.com
+- name: 罗马尼亚-116
+  type: vless
+  network: ws
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.12.30.30
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
+    path: /
+  encryption: none
 - name: 美国-001
+  type: vless
+  network: ws
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 198.71.189.30
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /
+  encryption: none
+- name: 美国-002
   type: vless
   network: ws
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1941,7 +1929,17 @@ proxies:
         like Gecko) Chrome/64.0.3282.186 Safari/537.36
     path: /
   encryption: none
-- name: 美国-002
+- name: 美国-003
+  type: vless
+  network: ws
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 192.0.54.30
+  port: 8880
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /
+- name: 美国-004
   type: vless
   network: ws
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1951,7 +1949,7 @@ proxies:
     headers:
       Host: vms.lifetime42.workers.dev
     path: /
-- name: 美国-003
+- name: 美国-005
   type: vless
   network: ws
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1966,17 +1964,7 @@ proxies:
         Gecko) Chrome/11.0.696.3 Safari/534.24
     path: /
   encryption: none
-- name: 美国-004
-  type: vless
-  network: ws
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  server: 192.0.54.30
-  port: 8880
-  ws-opts:
-    headers:
-      Host: vms.lifetime35.workers.dev
-    path: /
-- name: 美国-005
+- name: 美国-006
   type: vless
   network: ws
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1993,7 +1981,79 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
     max-early-data: 2560
   encryption: none
-- name: 美国-006
+- name: 美国-007
+  type: vless
+  network: ws
+  uuid: 3ea0a12e-162e-45b8-b03b-c490d6105091
+  server: 209.46.30.56
+  servername: wa2.mhrnet.com
+  port: 443
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: wa2.mhrnet.com
+    path: /
+  client-fingerprint: chrome
+- name: 美国-008 |3.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 138.199.35.215
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-009 |3.2MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 38.28.193.188
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-010 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.47
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-011 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.12
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-012 |2.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 156.146.59.20
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-013 |1.5MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+  type: http
+  server: 209.148.53.153
+  port: 8090
+  skip-cert-verify: true
+  tls: true
+- name: 美国-014 |1.3MB/s
+  type: mieru
+  server: 157.254.223.44
+  port: 34567
+  password: dongtaiwang.com
+  multiplexing: MULTIPLEXING_LOW
+  transport: TCP
+  username: dongtaiwang.com
+- name: 美国-015 |1.2MB/s|TK-US|GPT⁺-US|GM-US
+  type: http
+  server: 198.2.210.70
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 美国-016 |1.0MB/s|TK-US|GPT⁺-US
+  type: http
+  server: 138.199.35.198
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+- name: 美国-017
   type: vless
   network: ws
   uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
@@ -2011,113 +2071,28 @@ proxies:
     path: /poiuyws
   client-fingerprint: chrome
   encryption: none
-- name: 美国-007 |3.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 138.199.35.215
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-008 |3.2MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 38.28.193.188
-  port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 美国-009 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.47
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-010 |2.4MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.12
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-011 |2.3MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 156.146.59.20
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-012 |1.5MB/s|TK-US|YT-US|GPT⁺-US|GM-US
-  type: http
-  server: 209.148.53.153
-  port: 8090
-  skip-cert-verify: true
-  tls: true
-- name: 美国-013 |1.3MB/s
-  type: mieru
-  server: 157.254.223.44
-  port: 34567
-  password: dongtaiwang.com
-  multiplexing: MULTIPLEXING_LOW
-  transport: TCP
-  username: dongtaiwang.com
-- name: 美国-014 |1.2MB/s|TK-US|GPT⁺-US|GM-US
-  type: http
-  server: 198.2.210.70
-  port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 美国-015 |1.0MB/s|TK-US|GPT⁺-US
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  skip-cert-verify: true
-  tls: true
-- name: 美国-016
-  type: trojan
-  network: ws
-  server: 154.17.28.152
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  skip-cert-verify: false
-  sni: hhcm.hhxaf.cc.cd
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-    path: /
-- name: 美国-017 |2.8MB/s|TK-FR|GPT⁺-FR|GM-FR
-  type: trojan
-  network: ws
-  server: 141.193.213.21
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /assignment
-  client-fingerprint: chrome
-- name: 美国-018
-  type: vless
-  network: ws
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  server: 167.82.0.1
-  port: 80
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /
-  encryption: none
-- name: 美国-019 |2.9MB/s|TK-US|YT-US|GPT⁺-US|GM-US
+- name: 美国-018 |2.9MB/s|TK-US|YT-US|GPT⁺-US|GM-US
   type: http
   server: 45.145.73.240
   port: 8443
   skip-cert-verify: true
   tls: true
 - name: 英国-001
+  type: vless
+  network: ws
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 185.170.166.30
+  port: 8880
+  udp: true
+  xudp: true
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /
+  encryption: none
+- name: 英国-002
   type: vless
   network: ws
   uuid: af475b0e-0c07-40fe-b4db-3dea2c0a481d
@@ -2138,33 +2113,33 @@ proxies:
   port: 9002
   skip-cert-verify: true
   tls: true
-- name: 荷兰-002 |1.8MB/s|TK-NL|GPT⁺-NL|GM-NL
-  type: http
-  server: 5.255.118.82
-  port: 443
-  skip-cert-verify: true
-  tls: true
-- name: 荷兰-003 |1.8MB/s|TK-NL|GPT⁺-NL
+- name: 荷兰-002 |1.8MB/s|TK-NL|GPT⁺-NL
   type: http
   server: 51.159.225.196
   port: 23856
   skip-cert-verify: true
   tls: true
-- name: 荷兰-004 |1.6MB/s|TK-NL|GPT⁺-NL|GM-NL
+- name: 荷兰-003 |1.6MB/s|TK-NL|GPT⁺-NL|GM-NL
   type: http
   server: 84.17.47.147
   port: 9002
   skip-cert-verify: true
   tls: true
-- name: 荷兰-005 |1.3MB/s|TK-NL|GPT⁺-NL
+- name: 荷兰-004 |1.1MB/s|TK-NL|YT-RU|GPT⁺-NL
   type: http
-  server: 2.59.183.62
+  server: 146.103.33.227
   port: 8443
   skip-cert-verify: true
   tls: true
-- name: 荷兰-006 |1.1MB/s|TK-NL|YT-RU|GPT⁺-NL
+- name: 荷兰-005 |1.8MB/s|TK-NL|GPT⁺-NL|GM-NL
   type: http
-  server: 146.103.33.227
+  server: 5.255.118.82
+  port: 443
+  skip-cert-verify: true
+  tls: true
+- name: 荷兰-006 |1.3MB/s|TK-NL|GPT⁺-NL
+  type: http
+  server: 2.59.183.62
   port: 8443
   skip-cert-verify: true
   tls: true
