@@ -17,7 +17,7 @@
 | ✈️ | 备用频道 | [进入](https://t.me/pyapk) | - |
 | ✈️ | TG群聊 | [进入](https://t.me/+j664EmVv8m0wZGVk) | - |
 | ✈️ | TG代理 | [进入](https://tg.dhsv.eu.org) | - |
-| 📦 | 软件网盘 | [进入](https://526900.xyz) | - |
+| ⏬ | 软件下载 | [进入](https://526900.xyz) | - |
 | ☁️ | 优选ip | [进入](https://ip.jsnzkpg.ccwu.cc) | - |
 | 🚀 | 共享ID | [进入](https://id.dhsv.eu.org) | - |
 | 🌐 | 代理加速 | [进入](https://proxy.dhsv.eu.org) | - |
@@ -39,7 +39,13 @@
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Jsnzkpg/Jsnzkpg&type=Date&legend=top-left)](https://www.star-history.com/#Jsnzkpg/Jsnzkpg&type=date&legend=top-left)
+<a href="https://www.star-history.com/?repos=Jsnzkpg%2FJsnzkpg&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Jsnzkpg/Jsnzkpg&type=date&theme=dark&legend=top-left&sealed_token=mKxKeRDdveMd4btny0-4m1TB-G3jYsakylGReB-qCVsxBMvf7X_vfAvzMIpl3ZLag5zME29-78X44qJpbajJFmGO-IDyv2X7NaQxDH5qoLfZ78elPsL0Fqd_FKGhy8S5z1tOjHQLEho8Z9MvW7KuC0DIvykUWFQtG9V0Je9cgtw_oVUrmv7wrIpL-ze8" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Jsnzkpg/Jsnzkpg&type=date&legend=top-left&sealed_token=mKxKeRDdveMd4btny0-4m1TB-G3jYsakylGReB-qCVsxBMvf7X_vfAvzMIpl3ZLag5zME29-78X44qJpbajJFmGO-IDyv2X7NaQxDH5qoLfZ78elPsL0Fqd_FKGhy8S5z1tOjHQLEho8Z9MvW7KuC0DIvykUWFQtG9V0Je9cgtw_oVUrmv7wrIpL-ze8" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Jsnzkpg/Jsnzkpg&type=date&legend=top-left&sealed_token=mKxKeRDdveMd4btny0-4m1TB-G3jYsakylGReB-qCVsxBMvf7X_vfAvzMIpl3ZLag5zME29-78X44qJpbajJFmGO-IDyv2X7NaQxDH5qoLfZ78elPsL0Fqd_FKGhy8S5z1tOjHQLEho8Z9MvW7KuC0DIvykUWFQtG9V0Je9cgtw_oVUrmv7wrIpL-ze8" />
+ </picture>
+</a>
 
 ---
 
