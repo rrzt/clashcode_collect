@@ -67,6 +67,16 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
+- name: 9|🇩🇪 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠➜@MetiVIP
+  obfs: salamander
+  obfs-password: detgimgm8qh8i2g2
+  password: elknam6l7izf3z71
+  port: 52023
+  server: assets.gateway-stream.com
+  skip-cert-verify: false
+  sni: assets.gateway-stream.com
+  tls: false
+  type: hysteria2
 - name: 9|🇩🇪@V2RayyNGvpn🇩🇪hy
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
