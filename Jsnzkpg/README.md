@@ -16,6 +16,7 @@
 | ✈️ | Telegram频道 | [关注](https://t.me/stymei) |
 | 🪜 | 永久节点订阅 | [复制](https://sub.445569.xyz) |
 | 📺 | 永久IPTV订阅 | [复制](https://live.445569.xyz/live.m3u) |
+| 🎥 | 永久TVbox订阅 | [复制](https://codeberg.org/Jsnzkpg/Jsnzkpg/raw/branch/Jsnzkpg/Jsnzkpg) |
 
 ---
 
