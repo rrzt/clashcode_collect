@@ -66,7 +66,7 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
       { "tag": "dns_cloudflare", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts", "detour": "GLOBAL" },
       { "tag": "dns_direct", "type": "group", "servers": [ "dns_alidns", "dns_dnspod" ] },
       { "tag": "dns_proxy", "type": "group", "servers": [ "dns_google", "dns_cloudflare" ] },
-      { "tag": "dns_fakeip", "type": "fakeip", "inet4_range": "28.0.0.0/8", "inet6_range": "fc00::/16" }
+      { "tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/16" }
     ],
     "rules": [
       { "preferred_by": [ "hosts" ], "server": "hosts" },
@@ -82,7 +82,8 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
     "final": "dns_direct",
     "strategy": "prefer_ipv4",
     "optimistic": true,
-    "reverse_mapping": true
+    "reverse_mapping": true,
+    "cache_client_subnet": true
   },
   "http_clients": [ { "tag": "detour_proxy", "detour": "GLOBAL" } ],
   "inbounds": [
@@ -312,7 +313,7 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
       { "tag": "dns_quad9", "type": "quic", "server": "dns11.quad9.net", "domain_resolver": "hosts", "detour": "GLOBAL" },
       { "tag": "dns_direct", "type": "group", "servers": [ "dns_alidns", "dns_dnspod" ] },
       { "tag": "dns_proxy", "type": "group", "servers": [ "dns_google", "dns_quad9" ] },
-      { "tag": "dns_fakeip", "type": "fakeip", "inet4_range": "28.0.0.0/8", "inet6_range": "fc00::/16" }
+      { "tag": "dns_fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/16" }
     ],
     "rules": [
       { "preferred_by": [ "hosts" ], "server": "hosts" },
@@ -329,6 +330,7 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
     "strategy": "prefer_ipv4",
     "optimistic": true,
     "reverse_mapping": true,
+    "cache_client_subnet": true,
     // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
     "client_subnet": "211.137.58.0/24"
   }
