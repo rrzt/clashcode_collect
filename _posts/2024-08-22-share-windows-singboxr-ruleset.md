@@ -74,10 +74,11 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_local" },
       { "rule_set": [ "ads" ], "action": "predefined" },
-      { "rule_set": [ "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      { "action": "evaluate", "server": "dns_direct" },
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_direct",
     "strategy": "prefer_ipv4",
@@ -146,18 +147,10 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
       { "rule_set": [ "proxy" ], "outbound": "国外域名" },
       { "rule_set": [ "cn" ], "outbound": "国内域名" },
       { "ip_is_private": true, "outbound": "私有网络" },
-      { "rule_set": [ "telegramip" ], "outbound": "电报消息" },
-      { "action": "resolve", "match_only": true },
-      { "rule_set": [ "cnip" ], "outbound": "国内 IP" }
+      { "rule_set": [ "cnip" ], "outbound": "国内 IP" },
+      { "rule_set": [ "telegramip" ], "outbound": "电报消息" }
     ],
     "rule_set": [
-      {
-        "tag": "trackerslist",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/trackerslist.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/trackerslist.srs"
-      },
       {
         "tag": "ads",
         "type": "remote",
@@ -243,18 +236,18 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
       },
       {
-        "tag": "telegramip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/telegramip.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
-      },
-      {
         "tag": "cnip",
         "type": "remote",
         "format": "binary",
         "path": "./ruleset/cnip.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
+      },
+      {
+        "tag": "telegramip",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/telegramip.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
       }
     ],
     "final": "漏网之鱼",
@@ -321,18 +314,18 @@ tags: [sing-box, sing-boxr, Windows, ruleset, rule_set, 分享]
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_local" },
       { "rule_set": [ "ads" ], "action": "predefined" },
-      { "rule_set": [ "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
+      { "action": "evaluate", "server": "dns_proxy", "client_subnet": "211.137.58.0/24" },
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_proxy",
     "strategy": "prefer_ipv4",
     "optimistic": true,
     "reverse_mapping": true,
-    "cache_client_subnet": true,
-    // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
-    "client_subnet": "211.137.58.0/24"
+    "cache_client_subnet": true
   }
 }
 ```

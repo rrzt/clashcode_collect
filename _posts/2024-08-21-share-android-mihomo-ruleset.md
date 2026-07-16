@@ -77,7 +77,6 @@ dns:
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - RULE-SET,private,real-ip
-    - RULE-SET,trackerslist,real-ip
     - RULE-SET,microsoft-cn,real-ip
     - RULE-SET,apple-cn,real-ip
     - RULE-SET,google-cn,real-ip
@@ -86,7 +85,7 @@ dns:
     - RULE-SET,ai,fake-ip
     - RULE-SET,proxy,fake-ip
     - RULE-SET,cn,real-ip
-    - MATCH,fake-ip
+    - MATCH,real-ip
   nameserver:
     - quic://dns.alidns.com:853
     - https://doh.pub/dns-query
@@ -138,14 +137,6 @@ proxy-groups:
   - {name: 免费节点, type: url-test, tolerance: 100, use: [🆓 免费订阅], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/free.png"}
 
 rule-providers:
-  trackerslist:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./ruleset/trackerslist.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/trackerslist.mrs"
-    interval: 86400
-
   ads:
     type: http
     behavior: domain
@@ -311,7 +302,6 @@ dns:
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - RULE-SET,private,real-ip
-    - RULE-SET,trackerslist,real-ip
     - RULE-SET,microsoft-cn,real-ip
     - RULE-SET,apple-cn,real-ip
     - RULE-SET,google-cn,real-ip
@@ -320,7 +310,7 @@ dns:
     - RULE-SET,ai,fake-ip
     - RULE-SET,proxy,fake-ip
     - RULE-SET,cn,real-ip
-    - MATCH,fake-ip
+    - MATCH,real-ip
   respect-rules: true
   nameserver:
     # 推荐将 `ecs` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
@@ -336,7 +326,7 @@ dns:
   nameserver-policy:
     'rule-set:private': [system]
     'rule-set:ads': [rcode://success]
-    'rule-set:trackerslist,microsoft-cn,apple-cn,google-cn,games-cn,cn': [quic://dns.alidns.com:853, https://doh.pub/dns-query]
+    'rule-set:microsoft-cn,apple-cn,google-cn,games-cn,cn': [quic://dns.alidns.com:853, https://doh.pub/dns-query]
 ```
 
 ---

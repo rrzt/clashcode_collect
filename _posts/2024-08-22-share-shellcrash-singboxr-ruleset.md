@@ -100,13 +100,6 @@ tags: [sing-box, sing-boxr, ShellCrash, ruleset, rule_set, 分享, Router]
     ],
     "rule_set": [
       {
-        "tag": "trackerslist",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/trackerslist.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/trackerslist.srs"
-      },
-      {
         "tag": "ads",
         "type": "remote",
         "format": "binary",
@@ -281,13 +274,11 @@ sc
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_resolver" },
       { "rule_set": [ "ads" ], "action": "predefined" },
-      { "rule_set": [ "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
       { "action": "evaluate", "server": "dns_direct" },
-      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" },
-      { "match_response": true, "ip_accept_any": true, "invert": true, "action": "respond" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_direct",
     "strategy": "prefer_ipv4",
@@ -337,22 +328,18 @@ sc
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_resolver" },
       { "rule_set": [ "ads" ], "action": "predefined" },
-      { "rule_set": [ "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
       // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
       { "action": "evaluate", "server": "dns_proxy", "client_subnet": "211.137.58.0/24" },
-      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" },
-      { "match_response": true, "ip_accept_any": true, "invert": true, "action": "respond" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_proxy",
     "strategy": "prefer_ipv4",
     "optimistic": true,
     "reverse_mapping": true,
-    "cache_client_subnet": true,
-    // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
-    "client_subnet": "211.137.58.0/24"
+    "cache_client_subnet": true
   }
 }
 ```

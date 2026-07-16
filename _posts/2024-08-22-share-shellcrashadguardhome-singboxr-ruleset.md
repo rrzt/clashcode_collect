@@ -109,13 +109,6 @@ tags: [sing-box, sing-boxr, ShellCrash, AdGuard Home, ruleset, rule_set, 分享,
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter-lite.srs"
       },
       {
-        "tag": "trackerslist",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/trackerslist.srs",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/trackerslist.srs"
-      },
-      {
         "tag": "private",
         "type": "remote",
         "format": "binary",
@@ -287,13 +280,11 @@ sc
       { "clash_mode": [ "Direct" ], "server": "dns_direct" },
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_resolver" },
-      { "rule_set": [ "fakeip-filter", "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "fakeip-filter", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
       { "action": "evaluate", "server": "dns_direct" },
-      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" },
-      { "match_response": true, "ip_accept_any": true, "invert": true, "action": "respond" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_direct",
     "strategy": "prefer_ipv4",
@@ -340,22 +331,18 @@ sc
       { "clash_mode": [ "Direct" ], "server": "dns_direct" },
       { "clash_mode": [ "Global" ], "server": "dns_proxy" },
       { "rule_set": [ "private" ], "server": "dns_resolver" },
-      { "rule_set": [ "fakeip-filter", "trackerslist", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
+      { "rule_set": [ "fakeip-filter", "microsoft-cn", "apple-cn", "google-cn", "games-cn" ], "server": "dns_direct" },
       { "rule_set": [ "games", "ai", "proxy" ], "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" },
       { "rule_set": [ "cn" ], "server": "dns_direct" },
       // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
       { "action": "evaluate", "server": "dns_proxy", "client_subnet": "211.137.58.0/24" },
-      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" },
-      { "match_response": true, "ip_accept_any": true, "invert": true, "action": "respond" },
-      { "query_type": [ "A", "AAAA" ], "server": "dns_fakeip" }
+      { "match_response": true, "rule_set": [ "cnip" ], "action": "respond" }
     ],
     "final": "dns_proxy",
     "strategy": "prefer_ipv4",
     "optimistic": true,
     "reverse_mapping": true,
-    "cache_client_subnet": true,
-    // 推荐将 `client_subnet` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
-    "client_subnet": "211.137.58.0/24"
+    "cache_client_subnet": true
   }
 }
 ```
@@ -424,16 +411,43 @@ sc
 mkdir -p /data/AdGuardHome
 curl -sS -o /data/AdGuardHome/AdGuardHome -L https://ghfast.top/https://github.com/DustinWin/proxy-tools/releases/download/AdGuardHome/AdGuardHome_beta_linux_arm64
 chmod +x /data/AdGuardHome/AdGuardHome
-/data/AdGuardHome/AdGuardHome -s install
-/data/AdGuardHome/AdGuardHome -s start
+cat <<'EOF' > /data/AdGuardHome/AdGuardHome.sh
+#!/bin/sh /etc/rc.common
+
+START=95
+STOP=01
+USE_PROCD=1
+
+WORK_DIR="/data/AdGuardHome"
+CONFIG_FILE="$WORK_DIR/AdGuardHome.yaml"
+
+start_service() {
+    echo "AdGuard Home 正在启动..."
+    procd_open_instance
+    procd_set_param command "$WORK_DIR/AdGuardHome" -s run
+    procd_append_param command -c "$CONFIG_FILE"
+    procd_append_param command -w "$WORK_DIR"
+    procd_set_param pidfile /var/run/AdGuardHome.pid
+    procd_close_instance
+    echo "AdGuard Home 启动成功！"
+}
+
+stop_service() {
+    echo "AdGuard Home 正在停止..."
+    sleep 3
+    echo "AdGuard Home 停止成功！"
+}
+EOF
+cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
+chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 cat <<EOF >> /data/auto_ssh/auto_ssh.sh
 sleep 10s
-/data/AdGuardHome/AdGuardHome -s install
-/data/AdGuardHome/AdGuardHome -s start
+cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
+chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353

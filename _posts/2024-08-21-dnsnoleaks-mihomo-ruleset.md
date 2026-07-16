@@ -72,7 +72,7 @@ dns:
     - RULE-SET,fakeip-filter,real-ip
     - RULE-SET,proxy,fake-ip
     - RULE-SET,cn,real-ip
-    - MATCH,fake-ip
+    - MATCH,real-ip
   respect-rules: true
   nameserver:
     # 推荐将 `ecs` 设置为当前宽带运营商分配的默认 DNS 的 IP 段

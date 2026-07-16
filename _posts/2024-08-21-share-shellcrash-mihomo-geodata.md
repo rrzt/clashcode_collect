@@ -181,7 +181,6 @@ dns:
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - GEOSITE,private,real-ip
-    - GEOSITE,trackerslist,real-ip
     - GEOSITE,microsoft-cn,real-ip
     - GEOSITE,apple-cn,real-ip
     - GEOSITE,google-cn,real-ip
@@ -190,7 +189,7 @@ dns:
     - GEOSITE,ai,fake-ip
     - GEOSITE,proxy,fake-ip
     - GEOSITE,cn,real-ip
-    - MATCH,fake-ip
+    - MATCH,real-ip
   nameserver:
     - quic://dns.alidns.com:853
     - https://dns.pub/dns-query
@@ -227,7 +226,6 @@ dns:
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - GEOSITE,private,real-ip
-    - GEOSITE,trackerslist,real-ip
     - GEOSITE,microsoft-cn,real-ip
     - GEOSITE,apple-cn,real-ip
     - GEOSITE,google-cn,real-ip
@@ -236,7 +234,7 @@ dns:
     - GEOSITE,ai,fake-ip
     - GEOSITE,proxy,fake-ip
     - GEOSITE,cn,real-ip
-    - MATCH,fake-ip
+    - MATCH,real-ip
   respect-rules: true
   nameserver:
     # 推荐将 `ecs` 设置为当前宽带运营商分配的默认 DNS 的 IP 段
@@ -252,7 +250,7 @@ dns:
   nameserver-policy:
     'geosite:private': [system]
     'geosite:ads': [rcode://success]
-    'geosite:trackerslist,microsoft-cn,apple-cn,google-cn,games-cn,cn': [quic://dns.alidns.com:853, https://doh.pub/dns-query]
+    'geosite:microsoft-cn,apple-cn,google-cn,games-cn,cn': [quic://dns.alidns.com:853, https://doh.pub/dns-query]
 ```
 
 ## 五、 添加定时任务
