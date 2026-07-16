@@ -52,7 +52,7 @@ tags: [sing-box, sing-boxr, ShellCrash, AdGuard Home, ruleset, rule_set, 分享,
   ],
   "outbounds": [
     { "tag": "节点选择", "type": "selector", "outbounds": [ "香港节点", "台湾节点", "日本节点", "新加坡节点", "美国节点", "免费节点", "🆚 vless 节点" ] },
-    { "tag": "网络测试", "type": "selector", "outbounds": [ "全球直连", "节点选择", "香港节点", "台湾节点", "日本节点", "新加坡节点", "美国节点", "免费节点", "🆚 vless 节点" ] },
+    { "tag": "网络测试", "type": "selector", "outbounds": [ "节点选择", "香港节点", "台湾节点", "日本节点", "新加坡节点", "美国节点", "免费节点", "🆚 vless 节点" ] },
     { "tag": "游戏平台", "type": "selector", "outbounds": [ "节点选择", "香港节点", "台湾节点", "日本节点", "新加坡节点", "美国节点", "🆚 vless 节点" ] },
     { "tag": "AI 平台", "type": "selector", "outbounds": [ "节点选择", "香港节点", "台湾节点", "日本节点", "新加坡节点", "美国节点", "🆚 vless 节点" ] },
     { "tag": "游戏服务", "type": "selector", "outbounds": [ "全球直连", "节点选择" ] },
@@ -445,7 +445,7 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 cat <<EOF >> /data/auto_ssh/auto_ssh.sh
-sleep 10s
+sleep 20s
 cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
 chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353

@@ -286,7 +286,7 @@ echo -e '12345678\n12345678' | passwd root
 
   - ➎ 进入 2) 功能设置 → 5) 启用域名嗅探，选择“1) 是”
 
-- ④ 进入主菜单 → 4 启动设置，启用“1) 开机自启动”（若重启路由器后服务没有自动运行，可进入 3) 设置自启延时，设置为“30”秒，然后在《[六、 1. ⑥](https://proxy-tutorials.dustinwin.cc.cd//posts/pin-shellcrashadguardhome-mihomo/#1-adguard-home-%E5%AE%89%E8%A3%85)》，将 `sleep 10s` 改为 `sleep 40s`）
+- ④ 进入主菜单 → 4 启动设置，启用“1) 开机自启动”，然后选择“3) 设置自启延时”为“10 秒”
 - ⑤ 进入主菜单 → 5) 自动任务 → 1) 添加自动任务，输入对应的数字并回车后可设置执行条件
 - ⑥ 进入主菜单 → 8) 工具与优化，选择“6) 小米设备软固化 SSH”（无需输入需要还原的 SSH 密码）
 - ⑦ 进入主菜单 → 9) 更新与支持 → 4) 安装/更新本地 Dashboard 面板，推荐安装“1) 安装 zashboard 面板”  
@@ -383,10 +383,9 @@ echo -e '12345678\n12345678' | passwd root
 {: .prompt-warning }
 
 - ⑦ 在最下方添加如下内容并保存：
-  - 注： 若 ShellCrash 设置了自启延时如“30”秒，须将 `sleep 10s` 修改为 `sleep 40s`（即 +10s）
 
   ```shell
-  sleep 10s
+  sleep 20s
   cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
   chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
   iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
@@ -471,7 +470,7 @@ echo -e '12345678\n12345678' | passwd root
   执行《[六、 1. ⑥](https://proxy-tutorials.dustinwin.cc.cd//posts/pin-shellcrashadguardhome-mihomo/#1-adguard-home-%E5%AE%89%E8%A3%85)》的操作步骤，删除添加的内容：
 
   ```shell
-  sleep 10s
+  sleep 20s
   cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
   chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
   iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353

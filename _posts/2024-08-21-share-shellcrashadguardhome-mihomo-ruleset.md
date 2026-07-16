@@ -63,7 +63,7 @@ proxies:
 
 proxy-groups:
   - {name: 节点选择, type: select, proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, 免费节点, 🆚 vless 节点], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/proxy.png"}
-  - {name: 网络测试, type: select, proxies: [全球直连, 节点选择, 香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, 免费节点, 🆚 vless 节点], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/networktest.png"}
+  - {name: 网络测试, type: select, proxies: [节点选择, 香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, 免费节点, 🆚 vless 节点], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/networktest.png"}
   - {name: 游戏平台, type: select, proxies: [节点选择, 香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, 🆚 vless 节点], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/games.png"}
   - {name: AI 平台, type: select, proxies: [节点选择, 香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, 🆚 vless 节点], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/ai.png"}
   - {name: 游戏服务, type: select, proxies: [全球直连, 节点选择], icon: "https://github.com/DustinWin/ruleset_geodata/releases/download/icons/games-cn.png"}
@@ -417,7 +417,7 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 cat <<EOF >> /data/auto_ssh/auto_ssh.sh
-sleep 10s
+sleep 20s
 cp -f /data/AdGuardHome/AdGuardHome.sh /etc/init.d/AdGuardHome
 chmod +x /etc/init.d/AdGuardHome && /etc/init.d/AdGuardHome start
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
