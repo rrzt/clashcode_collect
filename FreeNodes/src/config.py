@@ -7,12 +7,15 @@ from dataclasses import dataclass, field
 class SiteConfig:
     name: str
     start_url: str
+    type: str = "simple"                    # simple | yt_pwd | cloud_drive
     description: str = ""
     link_pattern: str | None = None
     failed_count: int = 0
     up_date: str = ""                           # last crawl date, YYYY-MM-DD
     node_count: int = 0                         # proxies found in last crawl
     exclude_patterns: list[str] | None = None   # href substrings to skip in article listing
+    pwd_hint: str | None = None                 # password hint for yt_pwd sites
+    yt_hint: str | None = None                  # YouTube hint for yt_pwd sites
 
 
 @dataclass
@@ -36,6 +39,7 @@ class CrawlConfig:
     max_articles: int = 3
     timeout: int = 30
     concurrency: int = 3
+    proxy: str = ""                             # HTTP proxy for YouTube access
 
 
 @dataclass
@@ -69,6 +73,7 @@ def save_config(config: Config, path: str = "config.yaml"):
         entry = {
             "name": s.name,
             "start_url": s.start_url,
+            "type": s.type,
             "description": s.description,
         }
         if s.link_pattern:
@@ -79,6 +84,10 @@ def save_config(config: Config, path: str = "config.yaml"):
             entry["node_count"] = s.node_count
         if s.exclude_patterns:
             entry["exclude_patterns"] = s.exclude_patterns
+        if s.pwd_hint:
+            entry["pwd_hint"] = s.pwd_hint
+        if s.yt_hint:
+            entry["yt_hint"] = s.yt_hint
         if s.failed_count:
             entry["failed_count"] = s.failed_count
         raw_sites.append(entry)

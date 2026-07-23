@@ -1,11 +1,16 @@
 """SiteProcessor — full lifecycle for a single crawl target.
 
-Extracted from the original mvp_clashmeta.py monolith.
+Handles three site types:
+  - simple: blog pages with direct subscription links
+  - yt_pwd: YouTube video password → blog decryption
+  - cloud_drive: YouTube channel → cloud drive zip → extract
 """
 import asyncio
 import re
+import tempfile
 from dataclasses import dataclass, field
 from datetime import date
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from src.config import SiteConfig, Config
@@ -28,7 +33,7 @@ class SiteResult:
 
 
 class SiteProcessor:
-    """Process a single site end-to-end: blog → articles → links → download → save."""
+    """Process a single site end-to-end: blog/videos → links → download → save."""
 
     def __init__(self, site: SiteConfig, config: Config, llm: LLMRouter):
         self.site = site
@@ -41,6 +46,131 @@ class SiteProcessor:
 
     async def run(self) -> SiteResult:
         """Run the full site processing pipeline."""
+        site_type = getattr(self.site, 'type', 'simple')
+        if site_type == 'cloud_drive':
+            return await self._run_cloud_drive()
+        else:
+            return await self._run_blog(site_type)
+
+    async def _run_cloud_drive(self) -> SiteResult:
+        """Process a YouTube channel → cloud drive → zip → extract."""
+        result = SiteResult(site_name=self.site.name)
+        print(f"\n{'='*60}")
+        print(f"SITE: {self.site.name} (cloud_drive)")
+        print(f"URL:  {self.site.start_url}")
+        print(f"{'='*60}")
+
+        # Configure proxy for yt-dlp (YouTube access)
+        if self.config.crawl.proxy:
+            from src.youtube import configure as yt_configure
+            yt_configure(self.config.crawl.proxy)
+
+        from src.youtube import list_channel_videos, get_video_metadata, extract_date_from_title, extract_external_links, extract_cloud_drive_links, extract_paste_links
+        from src.drive import extract_drive_id, download_and_extract_zip
+        from src.paste import extract_paste_url, decrypt_paste
+
+        # 1. List channel videos
+        print(f"\n[1/3] Listing channel videos...")
+        videos = await list_channel_videos(self.site.start_url, limit=self.max_articles)
+        if not videos:
+            result.errors.append("no videos found")
+            return result
+        print(f"       got {len(videos)} videos")
+
+        # 2. Pick newest by title date
+        picked: list[dict] = []
+        for v in videos:
+            d = extract_date_from_title(v.title)
+            if d:
+                picked.append({"url": v.url, "date": d, "title": v.title})
+        picked.sort(key=lambda x: x["date"], reverse=True)
+        picked = picked[:self.max_articles]
+
+        for p in picked:
+            print(f"       [{p['date']}] {p['title'][:60]}")
+        if not picked:
+            result.errors.append("no dated videos found")
+            return result
+
+        # 3. For each video, get description → extract Drive links → download zip
+        print(f"\n[2/3] Processing {len(picked)} videos...")
+        txt_contents: list[str] = []
+        yaml_contents: list[str] = []
+
+        for p in picked:
+            print(f"  → {p['title'][:60]}")
+            try:
+                video = await get_video_metadata(p["url"])
+                if not video.success:
+                    result.errors.append(f"video metadata failed: {video.error}")
+                    continue
+
+                drive_urls = extract_cloud_drive_links(video.description)
+                print(f"    drive links: {len(drive_urls)}")
+                for drive_url in drive_urls:
+                    file_id = extract_drive_id(drive_url)
+                    if not file_id:
+                        continue
+                    with tempfile.TemporaryDirectory() as tmpdir:
+                        extracted = await download_and_extract_zip(
+                            file_id, Path(tmpdir), timeout=120,
+                        )
+                        for path in extracted:
+                            body = path.read_text(encoding="utf-8", errors="replace")
+                            ext = path.suffix.lower()
+                            if ext == ".txt":
+                                txt_contents.append(body)
+                                result.txt_count += 1
+                                result.total_bytes += len(body)
+                            elif ext in (".yaml", ".yml"):
+                                yaml_contents.append(body)
+                                result.yaml_count += 1
+                                result.total_bytes += len(body)
+                            print(f"    extracted: {path.name} ({len(body)}B)")
+
+                # Fallback: try paste.to links if no Drive links
+                if not drive_urls:
+                    paste_url = extract_paste_url(video.description)
+                    if paste_url:
+                        print(f"    paste.to found: {paste_url[:60]}...")
+                        # Get password from subtitles
+                        from src.youtube import extract_password_from_text
+                        pwd_list = extract_password_from_text(video.subtitles_text + "\n" + video.description)
+                        for pwd in (pwd_list[:5] or [""]):
+                            paste_page = await decrypt_paste(paste_url, password=pwd)
+                            if paste_page and paste_page.links:
+                                print(f"    paste.to decrypted → {len(paste_page.links)} links")
+                                for link in paste_page.links:
+                                    content = link["href"]
+                                    if content.endswith((".txt", ".yaml", ".yml", ".conf", ".json")):
+                                        try:
+                                            import httpx
+                                            async with httpx.AsyncClient(timeout=30) as c:
+                                                resp = await c.get(content)
+                                                body = resp.text
+                                                ext = content.rsplit(".", 1)[-1]
+                                                if ext == "txt":
+                                                    txt_contents.append(body)
+                                                    result.txt_count += 1
+                                                elif ext in ("yaml", "yml"):
+                                                    yaml_contents.append(body)
+                                                    result.yaml_count += 1
+                                                result.total_bytes += len(body)
+                                                print(f"    downloaded: {content} ({len(body)}B)")
+                                        except Exception as e:
+                                            print(f"    failed: {content} ({e})")
+                                break
+
+            except Exception as e:
+                result.errors.append(f"video {p['title'][:40]}...: {e}")
+                continue
+
+        # 4. Save outputs
+        result.articles_processed = len(picked)
+        return self._save_and_finish(result, txt_contents, yaml_contents)
+
+    async def _run_blog(self, site_type: str) -> SiteResult:
+        """Process a blog (simple or yt_pwd type)."""
         result = SiteResult(site_name=self.site.name)
         print(f"\n{'='*60}")
         print(f"SITE: {self.site.name} ({self.site.start_url})")
@@ -74,14 +204,17 @@ class SiteProcessor:
             print(f"  [{i+1}/{len(articles)}] {article['url']}")
             article_page = await fetch_page(article["url"], timeout_ms=60000)
             if not article_page.success:
-                err = f"  article fetch failed: {article_page.error[:80]}"
-                print(err)
-                result.errors.append(err)
+                result.errors.append(f"article fetch failed: {article_page.error[:80]}")
                 continue
 
+            # Try direct extraction first
             links, saved = await self._extract_links(article_page)
             if saved:
                 pattern_saved = True
+
+            # If direct extraction found nothing and site is yt_pwd, try YouTube password flow
+            if not links and site_type in ('yt_pwd', 'youtube_password'):
+                links = await self._try_youtube_password_flow(article_page)
 
             for url in links:
                 if url.endswith(".txt"):
@@ -126,22 +259,86 @@ class SiteProcessor:
                 result.errors.append(f"yaml download failed: {url}")
                 print(f"  FAIL yaml: {url}")
 
-        if txt_contents:
-            save(self.site.name, ".txt", "\n".join(txt_contents), self.output_dir)
-        if yaml_contents:
-            save(self.site.name, ".yaml", "\n---\n".join(yaml_contents), self.output_dir)
+        return self._save_and_finish(result, txt_contents, yaml_contents)
 
-        # Update crawl metadata
-        self.site.up_date = date.today().isoformat()
-        self.site.node_count = result.txt_count + result.yaml_count
+    # ── YouTube password flow ──
 
-        print(f"\n{'='*60}")
-        print(f"DONE: {self.site.name} — {result.txt_count} txt + {result.yaml_count} yaml ({result.total_bytes}B)")
-        if pattern_saved:
-            print(f"  pattern self-healed: {self.site.link_pattern}")
-        print(f"{'='*60}")
+    async def _try_youtube_password_flow(self, page: Page) -> list[str]:
+        """Find YouTube link → get subtitles → extract password → decrypt page.
 
-        return result
+        Also checks for paste.to links with fragment keys.
+        """
+        from src.youtube import get_video_metadata, extract_password_from_text, extract_paste_links
+        from src.decryptor import detect_protection, try_decrypt, brute_force_4digit, generate_password_candidates
+        from src.decryptor import detect_protection, try_decrypt, brute_force_4digit, generate_password_candidates
+        from src.paste import extract_paste_url, decrypt_paste
+
+        page_text = page.html + page.markdown
+
+        # 1. Check for paste.to links first (ZYFXS flow)
+        paste_url = extract_paste_url(page_text)
+        if paste_url:
+            print(f"    found paste.to URL: {paste_url[:50]}...")
+            # Try without password first (some pastes don't need one)
+            paste_result = await decrypt_paste(paste_url, password="")
+            if paste_result and paste_result.links:
+                print(f"    paste decrypted without password → {len(paste_result.links)} links")
+                return [l["href"] for l in paste_result.links]
+
+        # 2. Check if page is actually password-protected
+        if not detect_protection(page.html):
+            print("    page not password-protected, skipping decrypt")
+            return []
+
+        # 3. Find YouTube links in the page
+        yt_links = re.findall(
+            r'https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)[\w-]+',
+            page_text,
+        )
+        if not yt_links:
+            print("    no YouTube links found in page")
+            # Try brute-force anyway if page is protected
+            passwords = generate_password_candidates("AABB")[:20]
+        else:
+            # 4. For each YouTube video, extract password candidates
+            passwords = []
+            for yt_url in yt_links[:2]:
+                print(f"    checking YouTube: {yt_url[:50]}...")
+                try:
+                    video = await get_video_metadata(yt_url)
+                    if not video.success:
+                        continue
+                    pwd_candidates = extract_password_from_text(video.subtitles_text)
+                    if not pwd_candidates:
+                        pwd_candidates = extract_password_from_text(video.description)
+                    passwords.extend(pwd_candidates)
+                    if pwd_candidates:
+                        print(f"    found passwords in subtitles: {pwd_candidates[:5]}")
+                        break
+                except Exception as e:
+                    print(f"    yt-dlp error: {e}")
+                    continue
+
+            if not passwords:
+                passwords = generate_password_candidates("AABB")[:50]
+
+        # 5. Try each password
+        print(f"    trying {min(len(passwords), 20)} password candidates...")
+        for pwd in passwords[:20]:
+            result = await try_decrypt(page.url, pwd)
+            if result.success and result.content:
+                # Re-extract links from decrypted content
+                llm_result = await self.llm.extract_links(result.content)
+                links = (
+                    llm_result.get("txt", [])
+                    + llm_result.get("yaml", [])
+                    + llm_result.get("other", [])
+                )
+                print(f"    decrypt success with password {pwd} → {len(links)} links")
+                return links
+
+        print(f"    decrypt failed with all {len(passwords)} candidates")
+        return []
 
     # ── Article selection ──
 
@@ -149,7 +346,21 @@ class SiteProcessor:
         """Select the *max_articles* newest articles from a blog listing page.
 
         Rule-only: tries several date formats found across different blog sites.
+        Falls back to scanning markdown content for article links when ``links`` is empty.
         """
+        articles: list[dict] = []
+
+        # Strategy 1: Use Crawl4AI's parsed links
+        articles = self._pick_articles_from_links(blog)
+        if articles:
+            return articles
+
+        # Strategy 2: Fallback — parse markdown for [title](url) article links
+        articles = self._pick_articles_from_markdown(blog.markdown)
+        return articles[:self.max_articles]
+
+    def _pick_articles_from_links(self, blog: Page) -> list[dict]:
+        """Extract article links from Crawl4AI's parsed link list."""
         articles: list[dict] = []
         for link in blog.links:
             text = link.get("text", "")
@@ -167,6 +378,29 @@ class SiteProcessor:
 
             full = urljoin(self._base, href)
             articles.append({"url": full, "date": d, "text": text[:80]})
+
+        seen: set[str] = set()
+        unique: list[dict] = []
+        for a in sorted(articles, key=lambda x: x["date"], reverse=True):
+            if a["url"] not in seen:
+                seen.add(a["url"])
+                unique.append(a)
+        return unique[:self.max_articles]
+
+    def _pick_articles_from_markdown(self, markdown: str) -> list[dict]:
+        """Fallback: parse markdown headings for ``[title](url)`` article links with Chinese dates.
+
+        Handles WordPress blogs where articles are rendered in headings
+        but not captured in Crawl4AI's ``links`` structure (e.g. yudou, oneclash).
+        """
+        articles: list[dict] = []
+        # Match markdown headings: ## [title text](url)
+        for m in re.finditer(r'^## \[(.+?)\]\((https?://[^\s)]+)\)', markdown, re.MULTILINE):
+            text = m.group(1)
+            url = m.group(2).rstrip('.,;)')
+            d = self._parse_article_date(text, url)
+            if d:
+                articles.append({"url": url, "date": d, "text": text[:80]})
 
         seen: set[str] = set()
         unique: list[dict] = []
@@ -219,7 +453,6 @@ class SiteProcessor:
             return [combined], False
 
         if not all_links:
-            print("    LLM also found nothing, giving up")
             return [], False
 
         print(f"    LLM found {len(all_links)} links")
@@ -245,6 +478,26 @@ class SiteProcessor:
             return all_links, False
 
     # ── Helpers ──
+
+    def _save_and_finish(self, result: SiteResult, txt_contents: list[str],
+                         yaml_contents: list[str]) -> SiteResult:
+        """Write output files and update metadata."""
+        if txt_contents:
+            save(self.site.name, ".txt", "\n".join(txt_contents), self.output_dir)
+        if yaml_contents:
+            save(self.site.name, ".yaml", "\n---\n".join(yaml_contents), self.output_dir)
+
+        # Update crawl metadata
+        self.site.up_date = date.today().isoformat()
+        self.site.node_count = result.txt_count + result.yaml_count
+
+        print(f"\n{'='*60}")
+        print(f"DONE: {self.site.name} — {result.txt_count} txt + {result.yaml_count} yaml ({result.total_bytes}B)")
+        if result.pattern_saved:
+            print(f"  pattern self-healed: {self.site.link_pattern}")
+        print(f"{'='*60}")
+
+        return result
 
     @staticmethod
     def _parse_article_date(text: str, href: str) -> str | None:
