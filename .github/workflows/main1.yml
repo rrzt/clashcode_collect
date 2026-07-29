@@ -47,7 +47,9 @@ jobs:
             [clashfree]="https://github.com/free-nodes/clashfree.git" 
             [NoMoreWalls]="https://github.com/peasoft/NoMoreWalls.git" 
              [v2ray]="https://github.com/free18/v2ray.git" 
-             [AutoMergePublicNodes]="https://github.com/chengaopan/AutoMergePublicNodes.git" 
+             [AutoMergePublicNodes]="https://github.com/chengaopan/AutoMergePublicNodes.git"
+             [awesome-vpn]="https://github.com/awesome-vpn/awesome-vpn.git" 
+             
              
                     
             # 可以继续添加其他仓库
