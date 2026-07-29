@@ -49,6 +49,7 @@ jobs:
              [v2ray]="https://github.com/free18/v2ray.git" 
              [AutoMergePublicNodes]="https://github.com/chengaopan/AutoMergePublicNodes.git"
              [awesome-vpn]="https://github.com/awesome-vpn/awesome-vpn.git" 
+             [ovmvo]="https://github.com/ovmvo/FreeSub.git" 
              
              
                     
