@@ -10,16 +10,16 @@
 https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml
 ```
 
-🕒 最后更新: 2026-07-30 05:44:23 CST
+🕒 最后更新: 2026-07-30 06:45:32 CST
 
 ### ⚡ 最新订阅 - 每2小时更新一次
 
 最新链接使用随机名称，每次更新都会改变。
 
 ```
-https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/latest/58809581.yaml
+https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/latest/10827814.yaml
 ```
 
-🕒 最后更新: 2026-07-30 05:44:25 CST
+🕒 最后更新: 2026-07-30 06:45:34 CST
 
 <!-- END: AUTO-UPDATED LINKS -->
