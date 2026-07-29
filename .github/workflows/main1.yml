@@ -50,6 +50,8 @@ jobs:
              [AutoMergePublicNodes]="https://github.com/chengaopan/AutoMergePublicNodes.git"
              [awesome-vpn]="https://github.com/awesome-vpn/awesome-vpn.git" 
              [ovmvo]="https://github.com/ovmvo/FreeSub.git" 
+             [ermaozi]="https://github.com/ermaozi/get_subscribe.git" 
+             
              
              
                     
